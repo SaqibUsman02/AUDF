@@ -24,6 +24,7 @@ const AllReport = () => {
     
             const data = await res.json();
             console.log(data);
+            alert(data);
             setUserData(data);
     
             if(!res.status === 200 ){
@@ -53,6 +54,7 @@ const AllReport = () => {
      <p>{userData.PostID}</p>
      <p>{userData?.Report}</p>
      <p>{userData.Report}</p>
+     <h1>{userData}</h1>
 
      {/* <p>{userData.QueryCategory}</p>
      <p>{userData.QueryTitle}</p>
