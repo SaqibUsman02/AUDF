@@ -47,7 +47,7 @@ const AllReport = () => {
   return (
     <div className='col-md-12 col-lg-12  col-xl-12'>  
     <h1>dasdasdasdasd</h1>
-    {userData.QueryCategory}
+    {userData?.QueryCategory}
     <p>{userData.UserID}</p>
      <p>{userData.PostID}</p>
      <p>{userData.QueryCategory}</p>
