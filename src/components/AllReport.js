@@ -46,10 +46,14 @@ const AllReport = () => {
 
   return (
     <div className='col-md-12 col-lg-12  col-xl-12'>  
-    <h1>dasdasdasdasd</h1>
+    <h1>d-------------</h1>
     {/* {userData?.QueryCategory}
     <p>{userData.UserID}</p> */}
      <p>{userData?.PostID}</p>
+     <p>{userData.PostID}</p>
+     <p>{userData?.Report}</p>
+     <p>{userData.Report}</p>
+
      {/* <p>{userData.QueryCategory}</p>
      <p>{userData.QueryTitle}</p>
      <p>{userData.QueryDetails}</p>
