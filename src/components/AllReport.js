@@ -50,11 +50,10 @@ const AllReport = () => {
     <h1>d-------------</h1>
     {/* {userData?.QueryCategory}
     <p>{userData.UserID}</p> */}
-     <p>{userData?.PostID}</p>
+     <p>{userData[0]?.PostID}</p>
      <p>{userData.PostID}</p>
      <p>{userData?.Report}</p>
      <p>{userData.Report}</p>
-     <h1>{userData}</h1>
 
      {/* <p>{userData.QueryCategory}</p>
      <p>{userData.QueryTitle}</p>
