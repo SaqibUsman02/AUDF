@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@media screen and (max-width: 768px) {
+ 
+.side{
+    display: none !important;
+    }   
+}
+
+.dashboard_sidebar{
+    font-family: 'Roboto', sans-serif;
+    color: #3C4858;
+    height: 100%;
+}
+
+.sidebar_logo{
+    display: flex;
+    width: 100px;
+    margin-left: 30px;
+    
+    
+}
+.sidebar-content{
+    /* height: 900px; */
+}

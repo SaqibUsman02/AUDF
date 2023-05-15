@@ -1,0 +1,76 @@
+.quora {
+    width: "100%";
+    background-color: #FFFFFF;
+    margin-top: 0px;
+
+  }
+  
+  .quora__contents {
+    display: flex;
+    min-width: fit-content;
+    padding: 3px 0;
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  
+  .quora__content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1300px;
+    min-width: fit-content;
+  }
+
+  @media screen and (max-width: 480px) {
+
+    /* .quora {
+      width: max-content !important;
+    }
+
+    .quora__contents {
+      width: max-content !important;
+
+
+    }
+    .quora__content {
+      width: max-content !important;
+
+    } */
+  }
+
+/* 
+  .quora {
+    width: "100%";
+    min-width: fit-content;
+  }
+  
+  .quora__contents {
+    display: flex;
+    justify-content: center;
+    padding: 120px 0;
+    background-color: rgba(197, 158, 158, 0.05);
+    min-width: fit-content;
+    width: 100%;
+  }
+  
+  .quora__content {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .react-responsive-modal-modal {
+    width: 90vw;
+    height: 90vh;
+  }
+  
+  .quill {
+    height: 50vh;
+  }
+  
+  .react-responsive-modal-overlay {
+    background: rgb(0 0 0 / 75%);
+  }
+   */

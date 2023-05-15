@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+.Feedback_col{
+
+font-family: "Roboto",sans-serif;
+font-weight: bolder;
+font-style: normal;
+color: #FFC518;
+
+}
+
+.btn-set {
+    display: flex;
+    border-radius: 20px !important;
+    border: transparent !important;
+    color: #000000 !important;
+    padding: 5px 20px !important;
+    background-color:#fdc20c !important;
+    justify-content: end;
+  }
+
+  .feedback_inp{
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgb(36, 35, 35) !important;
+  }
+  .feedback_inpp{
+    font-size: 1rem;
+    font-weight: 500;
+    color:#202020 !important
+  }
+  
+
+  @media screen and (width <= 480px)  {
+    .feedback_div{
+      font-size: 62.5%;
+    
+    }
+
+    .edit_profile_btn{
+      letter-spacing: 0.03rem !important;
+      margin-right: 3rem;
+      font-weight: 500 !important;
+    }
+
+    .feedback_inpp{
+      font-size: 1rem;
+      font-weight: 400;
+      color:#202020 !important
+    }
+    
+
+    
+  }  
+
+  @media screen and (Min-Width: 1025px)  {
+    .feedback_div{
+      font-size: 62.5%;
+    
+    }
+
+    .edit_profile_btn{
+      letter-spacing: 0.03rem !important;
+      margin-right: 15.5rem;
+
+    }   
+
+    
+  }  
+  
+  /* .btn-div{
+    display: flex;
+    justify-content: end;
+    margin-right: 18rem;
+  } */
+  
+  .btn-set:hover {
+    color: #fdc20c !important;
+    background-color:#000000 !important;
+  }
+  
+  .text-set {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 90rem;
+    color: #000000;
+  }
+
+  .edit_profile_btn {
+    float: center;
+    color: #202020 !important;
+    background-color: #eab308 !important;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    border-radius: 0.3rem;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer !important;
+    text-transform: uppercase;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    float: right;
+    width: 5rem;
+
+    
+
+  }
+  .edit_profile_btn:hover {
+    background-color: #860707 !important;
+    color: #f9f9fb !important;
+  }
+  

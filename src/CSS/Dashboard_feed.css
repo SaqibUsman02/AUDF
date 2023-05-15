@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+
+.icon-div {
+  border: 2px black solid;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #434242;
+  border: transparent;
+}
+
+.user-image,.user-imagee {
+  
+  height: 60px;
+  width: 60px;
+  background-color: #edeeef;
+  overflow: hidden;
+  border-radius: 30%;
+
+}
+
+.headerr img{
+    margin-right: 2px;
+
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.headerr h4{
+    color: #494949;
+    font-weight: 500 ;
+    letter-spacing: .015em;
+    width: fit-content;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-left: 75px;
+    margin-top: 17px;
+    text-transform:capitalize;
+
+}
+
+
+/* .circular--portrait { width: 60px;
+    height: 60px;
+    border-radius: 50%; 
+    overflow: hidden;
+} 
+
+.circular--portrait img { width: 100%;
+    height: auto;  } */
+/* .circular--portrait {  position: relative; width: 60px; height: 60px; overflow: hidden; border-radius: 50%; } 
+.circular--portrait img { width: 100%; height: auto;   } */
+
+
+.news {
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+}
+
+.question-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.category-title {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  margin-top: 0;
+}
+
+.question-details {
+  font-size:16px;
+  font-weight:400;
+  line-height:20px;
+  color: #3C4858;
+  /* margin-left:20px;
+  margin-top: 5px; */
+  margin: 0 0 1.3em;
+  margin-top: 1em;
+  
+  font-family: "Open Sans",sans-serif;
+}
+
+.col1 {
+  text-align: center;
+  color: #edeeef;
+  font-weight: bold;
+}
+
+.col1:hover, .col1 p:hover {
+  color: #fdc20c;
+}
+
+.col1 > p {
+  display: inline;
+  color: #e0e9f1;
+}
+
+.Containerr {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  
+}
+.nav_btnnnn{
+  float: right;
+  margin-left: 150px;
+  width: max-content;
+  height: max-content;
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #3C4858;
+  margin-top: 8px;
+}
+
+.searchh{
+  /* float: right; */
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.searchh input[type=text]{
+  width: max-content;
+  height: max-content;
+  border-radius:10px;
+  border: none;
+  color: #434242;
+  font-family: 'Lato',sans-serif;
+}
+.btn-opt {
+  float: right;
+  font-size: 24px;
+  color: #434242;
+}
+
+.btn-opt:hover {
+  color: #fdc20c;
+}
+
+.user-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  float: top;
+}
+
+.full,.Quora_full {
+    margin-left: 10px; 
+    padding: 10px 10px 0px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: #FAFAFA;
+    box-shadow: 10px 10px 5px #FAFAFA;
+
+}
+
+
+@media screen and (min-width: 769px) {
+  .searchh input{
+    width: 12rem !important;
+  }
+
+  .nav_btnnnn{
+    /* align-items: stretch !important; */
+    margin-left: 3.5rem !important;
+    font-size: .9rem !important;
+    font-weight: 500 !important;
+  }
+  
+}
+
+@media screen and (min-width: 1025px) {
+  .searchh input{
+    width: 25rem !important;
+  }
+
+  .nav_btnnnn{
+    /* align-items: stretch !important; */
+    margin-left: 10.5rem !important;
+   
+  }
+  
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .col1 > p{
+    font-size: .7rem !important;
+  }
+  
+}
+@media screen and (max-width: 768px) {
+  .full{
+    /* padding: none !important; */
+    /* padding-right: 0px  !important; */
+    padding: 5px 5px 0px 5px !important;
+    max-width: max-content !important;
+    /* min-width: fit-content; */
+    /* background-color: #b11717 !important; */
+    margin-left: 0px !important;
+    
+    
+    
+  }
+  .Quora_full{
+    margin-left: 1px !important; 
+  }
+
+  
+
+  .headerr img{
+    width: 40px;
+    height: 40px;
+}
+
+.headerr h4{
+    
+    margin-left: 3rem;
+    margin-top: 17px;
+    font-size: .6rem;
+    font-weight: 600 ;
+
+}
+
+.searchh{
+  /* float: right; */
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+.searchh input{
+  font-size: .8rem !important;
+  width: max-content !important;
+}
+.nav_btnnnn{
+  margin-left: 2.5rem !important;
+  font-size: .8rem !important;
+  font-weight: 500 !important;
+}
+
+/* .col1  > p{
+  font-size: 1rem !important;
+} */
+}

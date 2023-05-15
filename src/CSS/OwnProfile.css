@@ -1,0 +1,20 @@
+
+#edit_profile_btn {
+    float: center;
+    margin-top: 1em;
+    color: #202020;
+    background-color: #eab308;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer !important;
+    text-transform: uppercase;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-weight: 600;
+  }
+  #edit_profile_btn:hover {
+    background-color: #202020;
+    color: #f9f9fb;
+  }
+  

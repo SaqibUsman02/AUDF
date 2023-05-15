@@ -1,0 +1,38 @@
+/* .admin-container{
+    background-color: aqua;
+} */
+.admin-side-bar { 
+    height: fit-content;
+   display: flex;
+   /* align-items: center; */
+   flex-direction: column;
+   background-color: #3C4858;
+   height: auto;
+
+  /* flex: .18; */
+  /* width: 18%; */
+   margin-top: 1em;
+   margin-bottom: 1em;
+   margin-left: 1em;
+   border-radius: 5px;
+   box-shadow: 1px 1px 5px #878787; 
+
+  }
+
+  .logo {
+    height: 4em;
+    margin-top: 1em;
+    
+    margin-left: 2em;
+  
+  }
+
+  .sidebar{
+    font-family: 'Roboto', sans-serif;
+    color: #3C4858;
+    display:flex ;
+    flex-direction: column;
+    padding-left: 2.4em;
+    /* background-color: blue; */
+
+}

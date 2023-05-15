@@ -1,0 +1,85 @@
+
+/* ======================== Font ===================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.body{
+    font-weight: 400;
+    background-color: rgb(182, 157, 157);
+}
+
+.Title{
+    text-align: center;
+    font-family: "Roboto";
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #FFC518;
+}
+
+.Modal h3{
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    text-transform: uppercase;
+    
+}
+
+.input{
+    font-size: small;
+    border: 1px solid lightgray;
+}
+.btn {
+    background-color: #eab308;
+    color: #202020;
+    border: none;
+}
+
+.btn:hover {
+    background-color: black;
+
+}
+
+.form_Select{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.tags {
+    outline: none;
+}
+
+.modal__button {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin-top: 25px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
+
+  }
+
+  .modal__button > .btn {
+    border: none;
+    outline: none;
+    margin-top: 5px;
+    margin-right: 20px;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 33px;
+    cursor: pointer;
+    width: 17%;
+    margin-bottom: 20px ;
+    color: #202020;
+    background-color: #fcce35;
+  }
+  .modal__button > .btn:hover {
+    background-color: #eee;
+    color: #222;
+  }

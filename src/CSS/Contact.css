@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+
+@media screen and (max-width: 425px) {
+  .dbox {
+    margin-bottom: 25px !important;
+    padding: 0 20px;
+  }
+  .content{
+    padding: 7rem 5rem !important;
+  }
+
+  .contact_container{
+    width: 230px !important;
+  }
+ 
+}
+
+
+@media screen and (max-width: 768px)
+{
+  .dbox{
+    width: 80% !important;
+  }
+
+}
+
+.contact_container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#contactForm {
+  background-color: #55a44e;
+  padding-top: 20px;
+}
+.inputBox {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  background: white;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 0.6em;
+}
+
+#message {
+  height: 100px;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 7px;
+  pointer-events: none;
+  font-size: 0.7em;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 0.6rem;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: black;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.6rem;
+  padding: 0 10px;
+  background: white;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  letter-spacing: 0.2em;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  line-height: 1.9;
+  color: #8c8c8c;
+  height: 100vh;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+a {
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.content {
+  padding: 7rem 7rem;  
+  font-size: 62.5% !important;
+
+}
+
+
+.headingg {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-style: normal;
+  line-height: 2.2rem;
+}
+
+.form-control {
+  border: none;
+  background: #f3f3f3;
+}
+.form-control:active,
+.form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+  background: #f3f3f3;
+}
+
+.col-form-label {
+  color: #000;
+}
+
+.btn,
+.form-control,
+.custom-select {
+  height: 50px;
+}
+
+.custom-select:active,
+.custom-select:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #000;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px !important;
+}
+.btn.btn-primary {
+  background: #000;
+  color: #fff;
+  padding: 15px 20px;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:active,
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.box {
+  padding: 40px;
+  background: #fff;
+  -webkit-box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: -30px 30px 0px 0 rgba(0, 0, 0, 0.08);
+}
+
+.box h3 {
+  font-size: 14px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-style: normal;
+}
+
+label.error {
+  font-size: 12px;
+  color: red;
+}
+
+#message {
+  resize: vertical;
+}
+
+#form-message-warning,
+#form-message-success {
+  display: none;
+}
+
+#form-message-warning {
+  color: #b90b0b;
+}
+
+#form-message-success {
+  color: #55a44e;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+}
+
+#Login_input_body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cont_btn {
+  float: right;
+  margin-top: 2em;
+  color: #202020;
+  background-color: #eab308;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer !important;
+  text-transform: uppercase;
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-weight: 600;
+}
+#cont_btn :hover {
+  background-color: #b81f1f;
+  color: #f9f9fb;
+}
+
+.Input_Col {
+  display: block;
+  
+  margin-top: 100px;
+}
+
+/* Marker-------------------- */
+
+.dbox {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.dbox p {
+  margin-bottom: 0;
+}
+.dbox p span {
+  font-weight: 500;
+  color: #000;
+}
+.dbox p a  {
+  color: #9A9483;
+}
+.dbox a {
+  padding-left: 5px;
+}
+.dbox .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #eab308;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.dbox .icon span {
+  font-size: 20px;
+  color: #fff;
+}
+.dbox .text {
+  width: 100%;
+}
+
+.cont_p {
+
+    font-size:16px;
+    font-weight:400;
+    line-height:20px;
+    color: #3C4858;
+    /* margin-left:20px;
+    margin-top: 5px; */
+    margin: 0 0 1.3em;
+    margin-top: 1em;
+    
+    font-family: "Open Sans",sans-serif;
+ 
+}
+
+
+
+
+
+
+.inputBoxx {
+  position: relative;
+  width: 100%;
+  margin-top: 5px;
+  
+
+} 
+
+.inputt {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  color: black;  background-color: #FAFAFA;
+
+  font-size: 0.6em;
+}
+
+.inputBoxx span {
+  position: absolute;
+  left: 0;
+  padding: 7px;
+  pointer-events: none;
+  font-size: 0.7em;
+  color: black;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+ .inputBoxx input:valid ~ span,
+.inputBoxx input:focus ~ span {
+  color: black;
+  transform: translateX(10px) translateY(-7px);
+  font-size: 0.65em;
+  padding: 0 10px;
+  background-color: #FAFAFA;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  letter-spacing: 0.2em;
+}

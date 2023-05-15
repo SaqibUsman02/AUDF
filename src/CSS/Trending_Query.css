@@ -1,0 +1,39 @@
+.trending-sec{
+    display: block;
+    background-color: #FAFAFA;
+
+  }
+  
+  .con{
+    padding-top: 20px;
+    width: 35%;
+    margin-top: 150px;
+    max-height: fit-content;
+    height: 500px;
+
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .con{
+      display: none !important;
+    }
+    
+  }
+
+  .heading {
+    margin-left: 6px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -1.5rem;
+  }
+  
+  .queries > p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    padding-left: 20px;
+
+  }

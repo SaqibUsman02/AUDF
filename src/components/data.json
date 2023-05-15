@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "username": "John",
+    "date": "2022-03-08",
+    "userprofile": "https://picsum.photos/200",
+    "commentDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id nisl vel justo congue commodo eu ac nisl. Proin molestie nibh elit, eu commodo augue aliquet at. Nam ut lectus id risus pharetra vehicula eget sed eros. Suspendisse auctor est et est consequat, et varius nisl scelerisque."
+  },
+  {
+    "id": 2,
+    "username": "Jane",
+    "date": "2022-03-09",
+    "userprofile": "https://picsum.photos/200",
+    "commentDetails": "Nulla posuere, enim sit amet imperdiet commodo, erat mi tristique diam, quis suscipit enim odio sit amet massa. Vestibulum dapibus augue tellus, ac dictum justo congue sed. Praesent id lectus dolor. Suspendisse blandit purus et elit rhoncus, sed auctor velit dictum. Vivamus consequat ullamcorper ex, eget scelerisque purus pharetra vitae. "
+  },
+  {
+    "id": 3,
+    "username": "Bob",
+    "date": "2022-03-10",
+    "userprofile": "https://picsum.photos/200",
+    "commentDetails": "Cras vitae nisl euismod, pellentesque lacus ac, tincidunt sapien. Etiam sodales suscipit purus. Sed bibendum elit eget ultricies dictum. Etiam pellentesque arcu eget risus imperdiet eleifend. Proin convallis felis non enim pellentesque, eu sagittis tellus imperdiet. Vivamus quis arcu velit."
+  }
+]

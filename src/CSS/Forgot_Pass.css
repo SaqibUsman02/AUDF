@@ -1,0 +1,11 @@
+.forgot_pas{
+    border: 2px solid black;
+    width: 20rem;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.forgot_pas Button {
+    width: max-content;
+}
