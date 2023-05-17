@@ -13,7 +13,6 @@ import Cookies from 'js-cookie';
 
 import { useCookies } from "react-cookie";
 
-import { useCookies } from "react-cookie";
 
 
 function Login() {
@@ -30,7 +29,6 @@ function Login() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [cookies, setCookie] = useCookies();
 
 
   const loginUser = async(e) =>{
