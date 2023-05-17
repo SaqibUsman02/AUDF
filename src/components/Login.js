@@ -45,10 +45,15 @@ function Login() {
     });
 
     const data =await res.json();
-    alert(cookies.Email)
       // Check if response status is 200 OK
    // Check if response status is 200 OK
    if (res.status === 200) {
+    alert("sEm" + cookies.Email);
+    alert("sTS" + cookies.jwToken);
+    alert("sNS" + cookies.Name);
+
+
+
 
     // Check if message is "Admin"
     if (data.message === "Admin") {
