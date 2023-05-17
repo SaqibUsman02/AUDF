@@ -13,7 +13,6 @@ import Cookies from 'js-cookie';
 
 import { useCookies } from "react-cookie";
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 
 
 function Login() {
@@ -33,6 +32,22 @@ function Login() {
 
 
   const loginUser = async(e) =>{
+    function getCookieValue(name) {
+      const cookies = document.cookie.split("; ");
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].split("=");
+        if (cookie[0] === name) {
+          return decodeURIComponent(cookie[1]);
+        }
+      }
+      return ""; // Return an empty string if the cookie doesn't exist
+    }
+
+    const jwToken = getCookieValue("jwToken");
+const name = getCookieValue("Name");
+const email = getCookieValue("Email");
+
+
     e.preventDefault();
 
     const res = await fetch('https://audf-server.vercel.app/login', {
@@ -49,8 +64,9 @@ function Login() {
       // Check if response status is 200 OK
    // Check if response status is 200 OK
    if (res.status === 200) {
-    alert("sEm" + Cookies.get('jwToken'));
-    
+    alert("sEm" + Email);
+    alert("sTS" + jwToken);
+    alert("sNS" + name);
 
 
 
