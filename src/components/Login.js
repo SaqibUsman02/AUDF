@@ -64,7 +64,7 @@ const email = getCookieValue("Email");
       // Check if response status is 200 OK
    // Check if response status is 200 OK
    if (res.status === 200) {
-    alert("sEm" + Email);
+    alert("sEm" + email);
     alert("sTS" + jwToken);
     alert("sNS" + name);
 
