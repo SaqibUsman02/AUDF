@@ -12,7 +12,7 @@ const AllReport = () => {
     const callAboutPage = async() => {
   
         try{
-            const res= await fetch('https://audf-server.vercel.app/FetchReport',{
+            const res= await fetch('/FetchReport',{
                 method:"GET",
                 headers: {
                     Accept: "application/json",
