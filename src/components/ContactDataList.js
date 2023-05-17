@@ -7,7 +7,7 @@ const ContactDataList = () => {
    
     try {
      
-      const res= await fetch(`https://audf-server.vercel.app/contact`,{
+      const res= await fetch('/contact',{
         method:"GET",
         headers: {
             Accept: "application/json",
