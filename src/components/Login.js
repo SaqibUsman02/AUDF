@@ -40,7 +40,7 @@ function Login() {
           return decodeURIComponent(cookie[1]);
         }
       }
-      return ""; // Return an empty string if the cookie doesn't exist
+      return "ss"; // Return an empty string if the cookie doesn't exist
     }
 
     const jwToken = getCookieValue("jwToken");
