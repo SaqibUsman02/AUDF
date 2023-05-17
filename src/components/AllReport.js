@@ -50,19 +50,19 @@ const AllReport = () => {
     <h1>d-------------</h1>
     {/* {userData?.QueryCategory}
     <p>{userData.UserID}</p> */}
-     {/* <p>{userData[0]?.PostID}</p>
+     <p>{userData[0]?.PostID}</p>
      <p>{userData.PostID}</p>
      <p>{userData?.Report}</p>
-     <p>{userData.Report}</p> */}
+     <p>{userData.Report}</p>
 
      {/* <p>{userData.QueryCategory}</p>
      <p>{userData.QueryTitle}</p>
      <p>{userData.QueryDetails}</p>
      <p>{userData.QueryTags}</p> */}
 
-{userData && userData.map((QueriesData) => (
+{/* {userData && userData.map((QueriesData) => (
         <AdminReport key={QueriesData._id} QueriesData={QueriesData} />
-      ))}
+      ))} */}
 
 
 
