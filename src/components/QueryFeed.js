@@ -17,7 +17,7 @@ const QueryPrac = () => {
     const callAboutPage = async() => {
 
         try{
-            const res= await fetch('/Question',{
+            const res= await fetch('https://audf-server.vercel.app/Question',{
                 method:"GET",
                 headers: {
                     Accept: "application/json",

@@ -91,7 +91,7 @@ function Login() {
     e.preventDefault();
     const { Email} = Enter_Email;
 
-    const res = await fetch("/Forgot_Pass", {
+    const res = await fetch("https://audf-server.vercel.app/Forgot_Pass", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

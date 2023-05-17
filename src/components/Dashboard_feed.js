@@ -49,7 +49,7 @@ const Dashboard_feed = ({ QueriesData }) => {
 
     const { PostID, Upvote } = queryData;
 
-    const res = await fetch("/QueryUpvote", {
+    const res = await fetch("https://audf-server.vercel.app/QueryUpvote", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -84,7 +84,7 @@ const Dashboard_feed = ({ QueriesData }) => {
 
     const { PostID, Devote } = queryData;
 
-    const res = await fetch("/QueryDevote", {
+    const res = await fetch("https://audf-server.vercel.app/QueryDevote", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -131,7 +131,7 @@ const Query_Vote = async (e,name) => {
   // window.alert(Type+ name + value + e.target.getAttribute('name'));
 
 
-  const res = await fetch("/QueryVote", {
+  const res = await fetch("https://audf-server.vercel.app/QueryVote", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -167,7 +167,7 @@ const CheckQueryVote = async (req, res) => {
     params.append("Email", cookies.Email);
     params.append("PostID", QueriesData?.PostID);
 
-    const res= await fetch(`/VoteData?${params.toString()}`,{
+    const res= await fetch(`https://audf-server.vercel.app/VoteData?${params.toString()}`,{
       method:"GET",
       headers: {
           Accept: "application/json",
@@ -214,7 +214,7 @@ const CheckCommentVote = async (commentid) => {
     params.append("PostID", QueriesData?.PostID);
     params.append("CommentID", commentid);
 
-    const res= await fetch(`/CommentVoteData?${params.toString()}`,{
+    const res= await fetch(`https://audf-server.vercel.app/CommentVoteData?${params.toString()}`,{
       method:"GET",
       headers: {
           Accept: "application/json",
@@ -279,7 +279,7 @@ const CheckCommentVote = async (commentid) => {
     try {
       const params = new URLSearchParams();
       params.append("Email", QueriesData?.UserID);
-      const res= await fetch(`/OwnPhoto?${params.toString()}`,{
+      const res= await fetch(`https://audf-server.vercel.app/OwnPhoto?${params.toString()}`,{
         method:"GET",
         headers: {
             Accept: "application/json",
@@ -332,7 +332,7 @@ const CheckCommentVote = async (commentid) => {
     e.preventDefault();
   
     const {Photo,ID,Name,PostID,comment} = CommentData;  
-    const res = await fetch("/comment", {
+    const res = await fetch("https://audf-server.vercel.app/comment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -363,7 +363,7 @@ const CheckCommentVote = async (commentid) => {
     try {
       const params = new URLSearchParams();
       params.append("PostID", JSON.parse(localStorage.getItem('PostID')));
-      const res= await fetch(`/getAllComment?${params.toString()}`,{
+      const res= await fetch(`https://audf-server.vercel.app/getAllComment?${params.toString()}`,{
         method:"GET",
         headers: {
             Accept: "application/json",
@@ -444,7 +444,7 @@ const CheckCommentVote = async (commentid) => {
     // window.alert(Type+ name + value + e.target.getAttribute('name'));
   
   
-    const res = await fetch("/CommentVote", {
+    const res = await fetch("https://audf-server.vercel.app/CommentVote", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

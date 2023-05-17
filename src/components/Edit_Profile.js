@@ -22,7 +22,7 @@ const Edit_Profile = () => {
 
   const getUserDetails = async () => {
     try {
-      const res = await fetch("/OwnProfileDetails", {
+      const res = await fetch("https://audf-server.vercel.app/OwnProfileDetails", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -76,7 +76,7 @@ const Edit_Profile = () => {
     const { Email, name, Password, Phone, Gender, Website, Github, Twitter } =
       user;
 
-    const res = await fetch("/UpdateProfile", {
+    const res = await fetch("https://audf-server.vercel.app/UpdateProfile", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -116,7 +116,7 @@ const Edit_Profile = () => {
     e.preventDefault();
     const { Email, Password, New_Password, Confirm_Password } = change_pass;
 
-    const res = await fetch("/change_pass", {
+    const res = await fetch("https://audf-server.vercel.app/change_pass", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -143,7 +143,7 @@ const Edit_Profile = () => {
 
   const callOwnQuestionn = async () => {
     try {
-      const res = await fetch("/OwnQuestionn", {
+      const res = await fetch("https://audf-server.vercel.app/OwnQuestionn", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -175,7 +175,7 @@ const Edit_Profile = () => {
     const base64 = await convertToBase64(file);
     
     try {
-      const res = await fetch("/Uploads", {
+      const res = await fetch("https://audf-server.vercel.app/Uploads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

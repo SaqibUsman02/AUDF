@@ -29,7 +29,7 @@ const Forgot_pass = (props) => {
         e.preventDefault();
         const { Email,New_Password,Confirm_Password } = Change_pass;
     
-        const res = await fetch("/forgot_pass_save", {
+        const res = await fetch("https://audf-server.vercel.app/forgot_pass_save", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"

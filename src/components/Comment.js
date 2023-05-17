@@ -46,7 +46,7 @@ const Comment = () => {
   const {ID,PostID,comment} = CommentData;
   window.alert("ooooooooooooooo" + comment);
 
-  const res = await fetch("/comment", {
+  const res = await fetch("https://audf-server.vercel.app/comment", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

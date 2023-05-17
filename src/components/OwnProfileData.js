@@ -24,7 +24,7 @@ const OwnPrac = () => {
     const callAboutPage = async() => {
 
         try{
-            const res= await fetch('/OwnQuestion',{
+            const res= await fetch('https://audf-server.vercel.app/OwnQuestion',{
                 method:"GET",
                 headers: {
                     Accept: "application/json",
@@ -54,7 +54,7 @@ const OwnPrac = () => {
     const callOwnQuestionn = async() => {
 
         try{
-            const res= await fetch('/OwnQuestionn',{
+            const res= await fetch('https://audf-server.vercel.app/OwnQuestionn',{
                 method:"GET",
                 headers: {
                     Accept: "application/json",

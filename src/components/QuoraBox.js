@@ -55,7 +55,7 @@ const QuoraBox = () => {
   
       const { UserID,UserName, PostID, QueryCategory, QueryTitle, QueryDetails, QueryTags } = QuoraBox_queryData;
   
-      const res = await fetch("/Question", {
+      const res = await fetch("https://audf-server.vercel.app/Question", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -88,7 +88,7 @@ const QuoraBox = () => {
       try {
        
   
-        const res= await fetch(`/OwnProfile_Pic`,{
+        const res= await fetch(`https://audf-server.vercel.app/OwnProfile_Pic`,{
           method:"GET",
           headers: {
               Accept: "application/json",
@@ -120,7 +120,7 @@ const QuoraBox = () => {
     const callAboutPage = async() => {
   
         try{
-            const res= await fetch('/Question',{
+            const res= await fetch('https://audf-server.vercel.app/Question',{
                 method:"GET",
                 headers: {
                     Accept: "application/json",

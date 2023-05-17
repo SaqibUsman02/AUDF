@@ -26,7 +26,7 @@ const Dashboard_Header = () => {
 
   const GetImage = async (req, res) => {
     try {
-      const res= await fetch(`/OwnProfile_Pic`,{
+      const res= await fetch(`https://audf-server.vercel.app/OwnProfile_Pic`,{
         method:"GET",
         headers: {
             Accept: "application/json",

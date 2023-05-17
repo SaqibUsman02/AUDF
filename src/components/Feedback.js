@@ -33,7 +33,7 @@ const App = () => {
 
   const {ID,Category,Feedback} = FeedbackData;
 
-  const res = await fetch("/feedback", {
+  const res = await fetch("https://audf-server.vercel.app/feedback", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
@@ -77,10 +77,10 @@ const App = () => {
             <Form.Select className="feedback_inp mb-4" name='Category' value={value} onChange={handleInput}
               style={{width: '80%'}}
               >
-              <option value="app-feedback">Feedback about app</option>
-              <option value="course-feedback">Feedback about course</option>
-              <option value="faculty-feedback">Feedback about faculty</option>
-              <option value="suggestion-feedback">Feedback about suggestion</option>
+              <option value="app">Feedback about app</option>
+              <option value="course">Feedback about course</option>
+              <option value="faculty">Feedback about faculty</option>
+              <option value="suggestion">Feedback about suggestion</option>
             </Form.Select>
             <Form.Text muted className="feedback_inpp">Leave your feedback here.</Form.Text>
             <FloatingLabel className="feedback_inp mb-4" label="Feedback">
