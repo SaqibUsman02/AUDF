@@ -33,7 +33,7 @@ function Login() {
 
   const loginUser = async(e) =>{
     function getCookieValue(name) {
-      const cookies = document.cookie.split("; ");
+      const cookies = document.cookie.split(" ");
       for (let i = 0; i < cookies.length; i++) {
         const cookie = cookies[i].split("=");
         if (cookie[0] === name) {
