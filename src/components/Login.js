@@ -13,6 +13,7 @@ import Cookies from 'js-cookie';
 
 import { useCookies } from "react-cookie";
 
+import { useCookies } from "react-cookie";
 
 
 function Login() {
@@ -29,6 +30,8 @@ function Login() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const [cookies, setCookie] = useCookies();
+
 
   const loginUser = async(e) =>{
     e.preventDefault();
@@ -44,7 +47,7 @@ function Login() {
     });
 
     const data =await res.json();
-
+    alert(cookies.Email)
       // Check if response status is 200 OK
    // Check if response status is 200 OK
    if (res.status === 200) {
