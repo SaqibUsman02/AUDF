@@ -13,6 +13,7 @@ import Cookies from 'js-cookie';
 
 import { useCookies } from "react-cookie";
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 
 
 function Login() {
@@ -48,9 +49,8 @@ function Login() {
       // Check if response status is 200 OK
    // Check if response status is 200 OK
    if (res.status === 200) {
-    alert("sEm" + cookies.Email);
-    alert("sTS" + cookies.jwToken);
-    alert("sNS" + cookies.Name);
+    alert("sEm" + Cookies.get('jwToken'));
+    
 
 
 
