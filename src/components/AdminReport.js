@@ -24,7 +24,7 @@ const AdminReport = () => {
       const data = await res.json();
   
 
-      setuserReports(data.data);
+      setuserReports(data);
 
 
       if (!res.status === 200) {
