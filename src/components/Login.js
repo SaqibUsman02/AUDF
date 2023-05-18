@@ -46,7 +46,7 @@ function Login() {
     const jwToken = getCookieValue("jwToken");
 const name = getCookieValue("Name");
 const email = getCookieValue("Email");
-
+    
 
     e.preventDefault();
 
@@ -61,12 +61,19 @@ const email = getCookieValue("Email");
     });
 
     const data =await res.json();
+
       // Check if response status is 200 OK
    // Check if response status is 200 OK
    if (res.status === 200) {
-    alert("sEm" + email);
-    alert("sTS" + jwToken);
-    alert("sNS" + name);
+
+    localStorage.setItem('jwToken', response.token);
+    localStorage.setItem('Name', response.name);
+    localStorage.setItem('Email', response.email);
+
+    const jwToken = localStorage.getItem('jwToken');
+const name = localStorage.getItem('Name');
+const email = localStorage.getItem('Email');
+    alert(jwToken + "55555555555555555" + name + email);
 
 
 
