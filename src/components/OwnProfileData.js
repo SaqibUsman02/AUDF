@@ -118,7 +118,7 @@ const OwnPrac = () => {
     <div class="card">
       <div class="card-body">
         <div class="d-flex flex-column align-items-center text-center">
-          <img alt="profile"             className="user-image mb-1 mt-1 ms-1"
+          <img alt="profile" className="user-immaage mb-1 mt-1 ms-1"
   src={userDataa?.Photo}/>
           
           <div class="mt-3">

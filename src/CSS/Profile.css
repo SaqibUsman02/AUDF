@@ -24,6 +24,15 @@
     color: #f9f9fb;
   }
   
+  .user-immaage {
+  
+    height: 70px;
+    width: 70px;
+    background-color: #edeeef;
+    overflow: hidden;
+    border-radius: 30%;
+  
+  }
 
 body{
     margin-top:20px;
