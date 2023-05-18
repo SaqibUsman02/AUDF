@@ -47,19 +47,21 @@ function Login() {
     });
 
     const data =await res.json();
+    window.alert(data.token + "55555555555555555" + data.name);
+
 
       // Check if response status is 200 OK
    // Check if response status is 200 OK
    if (res.status === 200) {
 
-    localStorage.setItem('jwToken', res.token);
-    localStorage.setItem('Name', res.name);
-    localStorage.setItem('Email', res.email);
+//     localStorage.setItem('jwToken', res.token);
+//     localStorage.setItem('Name', res.name);
+//     localStorage.setItem('Email', res.email);
 
-    const jwTokens = localStorage.getItem('jwToken');
-const names = localStorage.getItem('Name');
-const emails = localStorage.getItem('Email');
-    window.alert(jwTokens + "55555555555555555" + names + emails);
+//     const jwTokens = localStorage.getItem('jwToken');
+// const names = localStorage.getItem('Name');
+// const emails = localStorage.getItem('Email');
+    window.alert(res.token + "55555555555555555" + res.name);
 
 
 
