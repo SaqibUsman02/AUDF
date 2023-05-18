@@ -284,16 +284,12 @@ const AdminDashboard = () => {
   };
 
   useEffect(() => {
-    const fetchData = async () => {
-      await getUserswithdate();
-      await displayFeedback();
-      await getUserscount();
-      await getQuerycount();
-      await getQueryCategory();
-      await getReportCategory();
-    };
-  
-    fetchData();
+    getUserswithdate();
+    displayFeedback();
+    getUserscount();
+    getQuerycount();
+    getQueryCategory();
+    getReportCategory();
   }, []);
 
   return (
