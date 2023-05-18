@@ -214,7 +214,7 @@ const AdminDashboard = () => {
       let bad = 0;
   const displayFeedback = async () => {
     try {
-      const res = await fetch("https://audf-server.vercel.app/findfeedback", {
+      const res = await fetch("https://audf-server.vercel.app/findfeedback", { mode: 'no-cors' },{
         method: "GET",
         headers: {
           Accept: "application/json",
