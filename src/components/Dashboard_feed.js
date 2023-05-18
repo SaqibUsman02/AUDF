@@ -282,7 +282,9 @@ const CheckCommentVote = async (commentid) => {
    
     try {
       const params = new URLSearchParams();
-      params.append("Email", QueriesData?.UserID);
+      const email = QueriesData?.UserID;
+      const encodedEmail = encodeURIComponent(email);
+      params.append("Email", encodedEmail);     
       const res= await fetch(`https://audf-server.vercel.app/OwnPhoto?${params.toString()}`,{
         method:"GET",
         headers: {
