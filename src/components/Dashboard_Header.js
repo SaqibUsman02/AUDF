@@ -42,8 +42,8 @@ const Dashboard_Header = () => {
         credentials: "include"
     });
       const data = await res;
-      window.alert("444444444444444" + data?.name);
-      window. alert("5555555" + data?.Email);
+      window.alert("444444444444444" + res?.name);
+      window. alert("5555555" + res?.Email);
 
       setUserDataa(data);
 
