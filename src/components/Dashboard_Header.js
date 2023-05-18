@@ -37,6 +37,9 @@ const Dashboard_Header = () => {
         credentials: "include"
     });
       const data = await res.json();
+      alert(data.name);
+      alert(data.Email);
+
       setUserDataa(data);
 
       if (!res.status === 200) {
