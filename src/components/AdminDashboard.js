@@ -141,7 +141,7 @@ const AdminDashboard = () => {
 
       
 
-      // console.log("new====---------", dataArrayR)
+      // console.log("new====--------", dataArrayR)
 
       const categoryCounts = {
         offensive: 0,
