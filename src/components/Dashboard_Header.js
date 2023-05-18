@@ -30,9 +30,9 @@ const Dashboard_Header = () => {
       window. alert("5555555wwwwwwww" + (localStorage.getItem('Email')));
 
       const params = new URLSearchParams();
-      const email = JSON.parse(localStorage.getItem('Email'));
-const encodedEmail = encodeURIComponent(email);
-params.append("Email", encodedEmail);
+      const email = localStorage.getItem('Email');
+      const encodedEmail = encodeURIComponent(email);
+      params.append("Email", encodedEmail);
       const res= await fetch(`https://audf-server.vercel.app/OwnProfile_Pic?${params.toString()}`,{
         method:"GET",
         headers: {
