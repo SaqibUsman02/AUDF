@@ -330,7 +330,7 @@ const CheckCommentVote = async (commentid) => {
   // valuee k andar comment wala message save ho ga 
   const [valuee, setValuee] = useState('');
 
-  const [CommentData, SetCommentData] = useState({
+  const [CommentDatas, SetCommentDatas] = useState({
       Photo: "",
      ID: localStorage.getItem('Email'),
      Name: localStorage.getItem('Name'),
@@ -341,7 +341,7 @@ const CheckCommentVote = async (commentid) => {
   const postData = async (e) => {    
     e.preventDefault();
   
-    const {Photo,ID,Name,PostID,comment} = CommentData;  
+    const {Photo,ID,Name,PostID,comment} = CommentDatas;  
     const res = await fetch("https://audf-server.vercel.app/comment", {
       method: "POST",
       headers: {
