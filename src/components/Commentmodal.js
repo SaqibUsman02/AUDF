@@ -107,7 +107,7 @@ const CommentModal = ({ isOpen, onRequestClose }) => {
 
     });
 
-      const data = await res.json();
+      const data = await res;
       console.log(data);
       setUserDataa(data);
 

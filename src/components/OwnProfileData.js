@@ -38,7 +38,7 @@ const OwnPrac = () => {
                 
             });
     
-            const data = await res.json();
+            const data = await res;
             setUserData(data);
     
             if(!res.status === 200 ){
