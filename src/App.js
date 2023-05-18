@@ -4,10 +4,16 @@ import { Route,Routes } from "react-router-dom";
 
 
 
+
 import AdminDashboard from "./components/AdminDashboard";
 import AdminReport from "./components/AdminReport";
 import AdminUserslist from "./components/AdminUserslist";
 import AdminPanel from "./components/AdminPanel";
+import UsersChart from "./components/UsersChart";
+import AdminFeedback from "./components/AdminFeedback";
+import Adminuseless from "./components/Adminuseless";
+import Adminpostmodal from "./components/Adminpostmodal";
+import AdminContact from "./components/AdminContact";
 
 import Homepage from "./components/Homepage_prac";
 import Login from "./components/Login";
@@ -87,9 +93,18 @@ const Routing = () => {
 
 
 
+<Route path="/adminDashboard" element={<AdminDashboard />} />
+
 <Route path="/adminreport" element={<AdminReport />} />
-      <Route path="/userslist" element={<AdminUserslist />} />
-            <Route path="/adminDashboard" element={<AdminDashboard />} />
+
+<Route path="/adminfeedback" element={<AdminFeedback />} />
+
+<Route path="/userslist" element={<AdminUserslist />} />
+<Route path="/useless" element={<Adminuseless />} />
+<Route path="/admincontact" element={<AdminContact />} />
+
+
+
 
 
 
