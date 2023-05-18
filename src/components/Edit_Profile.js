@@ -26,7 +26,7 @@ const Edit_Profile = () => {
       const email = localStorage.getItem('Email');
       const encodedEmail = encodeURIComponent(email);
       params.append("Email", encodedEmail);
-      const res = await fetch("https://audf-server.vercel.app/OwnProfileDetails?${params.toString()}", {
+      const res = await fetch(`https://audf-server.vercel.app/OwnProfileDetails?${params.toString()}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -151,7 +151,7 @@ const Edit_Profile = () => {
       const email = localStorage.getItem('Email');
       const encodedEmail = encodeURIComponent(email);
       params.append("Email", encodedEmail);
-      const res = await fetch("https://audf-server.vercel.app/OwnQuestionn?${params.toString()}", {
+      const res = await fetch(`https://audf-server.vercel.app/OwnQuestionn?${params.toString()}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
