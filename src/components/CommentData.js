@@ -44,7 +44,7 @@ const Navigate =  useNavigate();
           params.append("PostID", QueriesData);
           params.append("CommentID", comment?._id);
       
-          const res= await fetch(`/CommentVoteData?${params.toString()}`,{
+          const res= await fetch(`https://audf-server.vercel.app/CommentVoteData?${params.toString()}`,{
             method:"GET",
             headers: {
                 Accept: "application/json",
@@ -104,7 +104,7 @@ const Navigate =  useNavigate();
         // window.alert(Type+ name + value + e.target.getAttribute('name'));
       
       
-        const res = await fetch("/CommentVote", {
+        const res = await fetch("https://audf-server.vercel.app/CommentVote", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
