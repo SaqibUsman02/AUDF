@@ -165,8 +165,8 @@ const CheckQueryVote = async (req, res) => {
   try {
    const params = new URLSearchParams();
       const email = localStorage.getItem('Email');
-      const encodedEmail = encodeURIComponent(email);
-      params.append("Email", encodedEmail);
+      // const encodedEmail = encodeURIComponent(email);
+      params.append("Email", email);
     params.append("PostID", QueriesData?.PostID);
 
     const res= await fetch(`https://audf-server.vercel.app/VoteData?${params.toString()}`,{
@@ -215,8 +215,8 @@ const CheckCommentVote = async (commentid) => {
   try {
     const params = new URLSearchParams();
       const email = localStorage.getItem('Email');
-      const encodedEmail = encodeURIComponent(email);
-      params.append("Email", encodedEmail);
+      // const encodedEmail = encodeURIComponent(email);
+      params.append("Email", email);
     params.append("PostID", QueriesData?.PostID);
     params.append("CommentID", commentid);
 
@@ -285,8 +285,8 @@ const CheckCommentVote = async (commentid) => {
     try {
       const params = new URLSearchParams();
       const email = QueriesData?.UserID;
-      const encodedEmail = encodeURIComponent(email);
-      params.append("Email", encodedEmail);     
+      // const encodedEmail = encodeURIComponent(email);
+      params.append("Email", email);     
       const res= await fetch(`https://audf-server.vercel.app/OwnPhoto?${params.toString()}`,{
         method:"GET",
         headers: {

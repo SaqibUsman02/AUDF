@@ -90,8 +90,8 @@ const QuoraBox = () => {
   
         const params = new URLSearchParams();
       const email = localStorage.getItem('Email');
-      const encodedEmail = encodeURIComponent(email);
-      params.append("Email", encodedEmail);
+      // const encodedEmail = encodeURIComponent(email);
+      params.append("Email", email);
       const res= await fetch(`https://audf-server.vercel.app/OwnProfile_Pic?${params.toString()}`,{
           method:"GET",
           headers: {
