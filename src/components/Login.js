@@ -43,9 +43,9 @@ function Login() {
       return "ss"; // Return an empty string if the cookie doesn't exist
     }
 
-    const jwToken = getCookieValue("jwToken");
-const name = getCookieValue("Name");
-const email = getCookieValue("Email");
+//     const jwToken = getCookieValue("jwToken");
+// const name = getCookieValue("Name");
+// const email = getCookieValue("Email");
     
 
     e.preventDefault();
