@@ -43,9 +43,9 @@ const AdminDashboard = () => {
       }
       const data = await response.json();
 
-      setUserCount(data.data.length);
+      setUserCount(data.length);
 
-      const allUsers = data.data;
+      const allUsers = data;
 
       var countStd = 0;
       var countTea = 0;
@@ -73,7 +73,7 @@ const AdminDashboard = () => {
       }
       const data = await response.json();
 
-      setQueryCount(data.data.length);
+      setQueryCount(data.length);
 
       let array = [
         { name: "user", value: userCount },
@@ -91,15 +91,13 @@ const AdminDashboard = () => {
 
   const getQueryCategory = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/showquery", {
-        mode: "no-cors",
-      });
+      const response = await fetch("https://audf-server.vercel.app/showquery");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
       const data = await response.json();
 
-      const dataArray = Object.values(data.data);
+      const dataArray = Object.values(data);
 
       let counttCpp = 0;
       let counttJava = 0;
@@ -147,7 +145,7 @@ const AdminDashboard = () => {
       }
       const data = await response.json();
 
-      const dataArrayR = Object.values(data.data);
+      const dataArrayR = Object.values(data);
 
       // console.log("new====---------", dataArrayR)
 
@@ -235,7 +233,7 @@ const AdminDashboard = () => {
 
       const data = await res.json();
 
-      setuserFeedback(data.data);
+      setuserFeedback(data);
 
     
 
