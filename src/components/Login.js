@@ -69,7 +69,7 @@ const email = localStorage.getItem('Email');
       Navigate('/adminDashboard');
     } else {
       dispatch({ type: "USER", payload: true });
-      window.alert("Sucessfully Login ");
+      window.alert("Succcccccessfully Login ");
       Navigate('/dashboard');
     }
   }else if(res.status === 400 || !res) {
