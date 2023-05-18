@@ -35,7 +35,9 @@ const AdminDashboard = () => {
 
   const getUserscount = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/usersCount ");
+      const response = await fetch("https://audf-server.vercel.app/usersCount ", {
+        mode: "no-cors",
+      });
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -63,7 +65,9 @@ const AdminDashboard = () => {
 
   const getQuerycount = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/queryCount");
+      const response = await fetch("https://audf-server.vercel.app/queryCount", {
+        mode: "no-cors",
+      });
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -87,7 +91,9 @@ const AdminDashboard = () => {
 
   const getQueryCategory = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/showquery");
+      const response = await fetch("https://audf-server.vercel.app/showquery", {
+        mode: "no-cors",
+      });
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -133,7 +139,9 @@ const AdminDashboard = () => {
 
   const getReportCategory = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/findreport");
+      const response = await fetch("https://audf-server.vercel.app/findreport", {
+        mode: "no-cors",
+      });
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -177,7 +185,9 @@ const AdminDashboard = () => {
 
   const getUserswithdate = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/finduserwithdate");
+      const response = await fetch("https://audf-server.vercel.app/finduserwithdate", {
+        mode: "no-cors",
+      });
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
