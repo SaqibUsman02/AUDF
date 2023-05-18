@@ -35,7 +35,7 @@ const AdminDashboard = () => {
 
   const getUserscount = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/usersCount ", {
+      const response = await fetch("https://audf-server.vercel.app/usersCount", {
         mode: "no-cors",
       });
       if (!response.status == 200 ) {
@@ -284,12 +284,16 @@ const AdminDashboard = () => {
   };
 
   useEffect(() => {
-    getUserswithdate();
-    displayFeedback();
-    getUserscount();
-    getQuerycount();
-    getQueryCategory();
-    getReportCategory();
+    const fetchData = async () => {
+      await getUserswithdate();
+      await displayFeedback();
+      await getUserscount();
+      await getQuerycount();
+      await getQueryCategory();
+      await getReportCategory();
+    };
+  
+    fetchData();
   }, []);
 
   return (
