@@ -80,7 +80,7 @@ const email = localStorage.getItem('Email');
       dispatch({type:"USER", payload: true});
       
       // console.log(ress);
-      window.alert("Successfully Login " );
+      window.alert("Succcccccessfully Login " );
     
       Navigate('/dashboard');
     }
