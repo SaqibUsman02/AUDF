@@ -22,7 +22,7 @@ const AllReport = () => {
     
             });
     
-            const data = await res;
+            const data = await res.json();
             console.log(data);
             alert(data);
             setUserData(data);

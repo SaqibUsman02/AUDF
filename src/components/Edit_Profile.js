@@ -35,7 +35,7 @@ const Edit_Profile = () => {
         credentials: "include",
       });
 
-      const data = await res;
+      const data = await res.json();
       SetGetData(data);
       if (!res.status === 200) {
         const error = new Error(res.error);
@@ -160,7 +160,7 @@ const Edit_Profile = () => {
         credentials: "include",
       });
 
-      const data = await res;
+      const data = await res.json();
       setUserDataa(data);
 
       if (!res.status === 200) {

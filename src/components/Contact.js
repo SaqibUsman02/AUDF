@@ -44,7 +44,7 @@ const Contact = () => {
       }),
     });
 
-    const data = await res;
+    const data = await res.json();
     if (!data) {
       console.log("Message not Send");
     } else {

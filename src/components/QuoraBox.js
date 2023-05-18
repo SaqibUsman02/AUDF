@@ -102,7 +102,7 @@ const QuoraBox = () => {
   
       });
   
-        const data = await res;
+        const data = await res.json();
         set_QuoraBox_userData(data);
   
         if (!res.status === 200) {
@@ -134,7 +134,7 @@ const QuoraBox = () => {
     
             });
     
-            const data = await res;
+            const data = await res.json();
             setUserData(data);
     
             if(!res.status === 200 ){

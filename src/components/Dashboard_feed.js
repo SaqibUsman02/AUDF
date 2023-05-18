@@ -144,7 +144,7 @@ const Query_Vote = async (e,name) => {
       DeVote
     }),
   });
-  const data = await res; // Parse the response body as JSON
+  const data = await res.json(); // Parse the response body as JSON
   if (res.status === 400 || !res) {
     window.alert(data.message);
   } else if (res.status === 300) {
@@ -230,7 +230,7 @@ const CheckCommentVote = async (commentid) => {
 
   });
 
-  const data = await res;
+  const data = await res.json();
   CommentVote_Value= data[0]?.Type;
         // window.alert(CommentVote_Value);
 
@@ -297,7 +297,7 @@ const CheckCommentVote = async (commentid) => {
 
     });
 
-      const data = await res;
+      const data =await res.json();
       // window.alert(data.OtherUserData?.Email)
 
       setUserDataa(data);
@@ -381,7 +381,7 @@ const CheckCommentVote = async (commentid) => {
 
     });
 
-      const data = await res;
+      const data =await res.json();
       setGetCommentData(data);
 
       if (!res.status === 200) {
@@ -466,7 +466,7 @@ const CheckCommentVote = async (commentid) => {
         DeVote: VoteNumber
       }),
     });
-    const data = await res; // Parse the response body as JSON
+    const data = await res.json(); // Parse the response body as JSON
     if (res.status === 400 || !res) {
       window.alert(data.message);
     } else if (res.status === 300) {

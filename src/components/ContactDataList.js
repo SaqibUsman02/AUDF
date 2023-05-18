@@ -17,7 +17,7 @@ const ContactDataList = () => {
 
     });
 
-      const data = await res;
+      const data = await res.json();
       SetContactData(data);
 
       if (!res.status === 200) {
