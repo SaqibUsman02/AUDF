@@ -139,7 +139,7 @@ const AdminDashboard = () => {
       }
       const data = await response.json();
 
-      const dataArrayR = data;
+      
 
       // console.log("new====---------", dataArrayR)
 
@@ -152,7 +152,7 @@ const AdminDashboard = () => {
         Other: 0,
       };
 
-      dataArrayR.forEach((docs) => {
+      data.forEach((docs) => {
         if (docs.Category in categoryCounts) {
           categoryCounts[docs.Category] += 1;
         }
