@@ -118,7 +118,8 @@ const OwnPrac = () => {
     <div class="card">
       <div class="card-body">
         <div class="d-flex flex-column align-items-center text-center">
-          <img alt="Admin" class="rounded-circle" width="150" src={userDataa?.Photo}/>
+          <img alt="profile"             className="user-image mb-1 mt-1 ms-1"
+  src={userDataa?.Photo}/>
           
           <div class="mt-3">
             <h3 className='text-capitalize'>{userDataa?.name}</h3>
