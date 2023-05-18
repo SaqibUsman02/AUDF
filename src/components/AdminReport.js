@@ -12,7 +12,7 @@ const AdminReport = () => {
   const displayReports = async () => {
     
     try {
-      const res = await fetch("/findreport", {
+      const res = await fetch("https://audf-server.vercel.app/findreport", {
         method: "GET",
         headers: {
           Accept: "application/json",

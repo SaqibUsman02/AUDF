@@ -8,7 +8,7 @@ const Adminpostmodal = ({ onClose, PostID }) => {
 
   const displayQueries = async () => {
     try {
-      const res = await fetch("/showquery", {
+      const res = await fetch("https://audf-server.vercel.app/showquery", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -37,7 +37,7 @@ const Adminpostmodal = ({ onClose, PostID }) => {
       const params = new URLSearchParams();
       params.append("postID", PostID);
 
-      await fetch(`/deletequery?${params.toString()}`, {
+      await fetch(`https://audf-server.vercel.app/deletequery?${params.toString()}`, {
         method: "DELETE",
         headers: {
           Accept: "application/json",

@@ -12,7 +12,7 @@ const AdminFeedback = () => {
 
   const displayFeedback = async () => {
     try {
-      const res = await fetch("/findfeedback", {
+      const res = await fetch("https://audf-server.vercel.app/findfeedback", {
         method: "GET",
         headers: {
           Accept: "application/json",

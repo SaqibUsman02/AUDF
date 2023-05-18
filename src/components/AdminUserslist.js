@@ -14,7 +14,7 @@
 
         const getUserslist = async () => {
           try {
-            const response = await fetch("/usersList", {
+            const response = await fetch("https://audf-server.vercel.app/usersList", {
               method: "GET",
               headers: {
                 Accept: "application/json",
@@ -40,7 +40,7 @@
                 try {
                   const params = new URLSearchParams();
                   params.append("email", user.Email);
-                  const response = await fetch(`/updateUser?${params.toString()}`, {
+                  const response = await fetch(`https://audf-server.vercel.app/updateUser?${params.toString()}`, {
                     method: "PUT", 
                     headers: {
                       Accept: "application/json",

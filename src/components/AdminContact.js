@@ -7,7 +7,7 @@ const AdminContact = () => {
 
   const getAllContact = async () => {
     try {
-      const res = await fetch("/contactadmin", {
+      const res = await fetch("https://audf-server.vercel.app/contactadmin", {
         method: "GET",
         headers: {
           Accept: "application/json",
