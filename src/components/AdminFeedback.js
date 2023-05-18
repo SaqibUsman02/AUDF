@@ -22,9 +22,11 @@ const AdminFeedback = () => {
       });
 
       const data = await res.json();
+      window.alert("435345"+ data[0].data);
 
 
-      setuserFeedback(data.data);
+
+      setuserFeedback(data);
 
 
       if (!res.status === 200) {
