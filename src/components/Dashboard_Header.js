@@ -42,8 +42,8 @@ const Dashboard_Header = () => {
         credentials: "include"
     });
       const data = await res;
-      window.alert("444444444444444" + res?.name);
-      window. alert("5555555" + res?.Email);
+      window.alert("444444444444444" + res.name);
+      window. alert("5555555" + res.Email);
 
       setUserDataa(data);
 
@@ -111,7 +111,7 @@ const Dashboard_Header = () => {
                 </Nav.Link>
                 <div className="headerrr circular--portrait d-inline-block mt-1 mb-1">
                   <img
-                    src={userDataa?.Photo}
+                    src={userDataa.Photo}
                     alt="logo"
                     className="user-imagee mb-1 mt-1 ms-1"
                   />
