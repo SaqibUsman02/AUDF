@@ -228,8 +228,7 @@ const Edit_Profile = () => {
                   <div class="d-flex  flex-column align-items-center text-center">
                     <img
                       alt="Admin"
-                      class="rounded-circle"
-                      width="150"
+                      className="user-immaage "               
                       src={userDataa?.Photo}
                     />
                     <input
