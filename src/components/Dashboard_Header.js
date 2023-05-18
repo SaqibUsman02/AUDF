@@ -26,7 +26,9 @@ const Dashboard_Header = () => {
 
   const GetImage = async (req, res) => {
     try {
-      const res= await fetch(`https://audf-server.vercel.app/OwnProfile_Pic`,{
+      const params = new URLSearchParams();
+      params.append("Email", JSON.parse(localStorage.getItem('Email')));
+      const res= await fetch(`https://audf-server.vercel.app/OwnProfile_Pic?${params.toString()}`,{
         method:"GET",
         headers: {
             Accept: "application/json",
@@ -38,6 +40,7 @@ const Dashboard_Header = () => {
       setUserDataa(data);
 
       if (!res.status === 200) {
+        alert("dashboard header");
         const error = new Error(res.error);
         throw error;
       }
