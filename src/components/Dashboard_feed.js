@@ -180,6 +180,8 @@ const CheckQueryVote = async (req, res) => {
   });
 
     const data = await res;
+          window.alert(data.Upvote + "  "+ data.PostID +  "  "+ data.UserID);
+
     vote_Value= data[0]?.Type;
     setUserDtaa(vote_Value);
     // window.alert(QueriesData?.QueryTitle + "  "+  vote_Value +"     " + UserDtaa);
