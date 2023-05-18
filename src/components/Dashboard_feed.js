@@ -163,8 +163,10 @@ const [UserDtaa, setUserDtaa] = useState("");
 const CheckQueryVote = async (req, res) => {
  
   try {
-    const params = new URLSearchParams();
-    params.append("Email", localStorage.getItem('Email'));
+   const params = new URLSearchParams();
+      const email = localStorage.getItem('Email');
+      const encodedEmail = encodeURIComponent(email);
+      params.append("Email", encodedEmail);
     params.append("PostID", QueriesData?.PostID);
 
     const res= await fetch(`https://audf-server.vercel.app/VoteData?${params.toString()}`,{
@@ -210,7 +212,9 @@ const CheckCommentVote = async (commentid) => {
  
   try {
     const params = new URLSearchParams();
-    params.append("Email", localStorage.getItem('Email'));
+      const email = localStorage.getItem('Email');
+      const encodedEmail = encodeURIComponent(email);
+      params.append("Email", encodedEmail);
     params.append("PostID", QueriesData?.PostID);
     params.append("CommentID", commentid);
 

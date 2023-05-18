@@ -25,7 +25,9 @@ const OwnPrac = () => {
 
         try{
           const params = new URLSearchParams();
-          params.append("Email", JSON.parse(localStorage.getItem('Email')));
+          const email = localStorage.getItem('Email');
+          const encodedEmail = encodeURIComponent(email);
+          params.append("Email", encodedEmail);
             const res= await fetch('https://audf-server.vercel.app/OwnQuestion?${params.toString()}',{
                 method:"GET",
                 headers: {
@@ -56,8 +58,12 @@ const OwnPrac = () => {
     const callOwnQuestionn = async() => {
 
         try{
-            const res= await fetch('https://audf-server.vercel.app/OwnQuestionn',{
-                method:"GET",
+          const params = new URLSearchParams();
+          const email = localStorage.getItem('Email');
+          const encodedEmail = encodeURIComponent(email);
+          params.append("Email", encodedEmail);
+          const res = await fetch("https://audf-server.vercel.app/OwnQuestionn?${params.toString()}", {
+            method:"GET",
                 headers: {
                     Accept: "application/json",
                     "Content-Type": "application/json"
