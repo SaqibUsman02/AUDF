@@ -38,7 +38,9 @@ const Navigate =  useNavigate();
  
         try {
           const params = new URLSearchParams();
-          params.append("Email", cookies.Email);
+      const email = localStorage.getItem('Email');
+      // const encodedEmail = encodeURIComponent(email);
+      params.append("Email", email);
           params.append("PostID", QueriesData);
           params.append("CommentID", comment?._id);
       
@@ -81,7 +83,7 @@ const Navigate =  useNavigate();
       };
 
       const [CommentVote, setCommentVote] = useState({
-        UserID: cookies.Email,
+        UserID: localStorage.getItem('Email'),
         PostID: QueriesData,
         CommentID: "",
         Type:  " ",
