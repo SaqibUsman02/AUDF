@@ -26,6 +26,9 @@ const Dashboard_Header = () => {
 
   const GetImage = async (req, res) => {
     try {
+
+      window. alert("5555555wwwwwwww" + (localStorage.getItem('Email')));
+
       const params = new URLSearchParams();
       params.append("Email", JSON.parse(localStorage.getItem('Email')));
       const res= await fetch(`https://audf-server.vercel.app/OwnProfile_Pic?${params.toString()}`,{
