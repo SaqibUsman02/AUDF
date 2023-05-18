@@ -179,7 +179,7 @@ const CheckQueryVote = async (req, res) => {
 
   });
 
-    const data = res.json();
+    const data =await res.json();
           window.alert(data[0]?.Type + " gfgdfgdfgdfgdf "+ data?.Type + "asdsadsa" + data + "6666666666" + data?.PostID +  "  "+ res.UserID);
 
     vote_Value= data[0]?.Type;
