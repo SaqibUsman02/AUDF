@@ -24,7 +24,9 @@ const OwnPrac = () => {
     const callAboutPage = async() => {
 
         try{
-            const res= await fetch('https://audf-server.vercel.app/OwnQuestion',{
+          const params = new URLSearchParams();
+          params.append("Email", JSON.parse(localStorage.getItem('Email')));
+            const res= await fetch('https://audf-server.vercel.app/OwnQuestion?${params.toString()}',{
                 method:"GET",
                 headers: {
                     Accept: "application/json",
