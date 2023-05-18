@@ -238,7 +238,7 @@ const AdminDashboard = () => {
         suggestion: 0,
       };
 
-      userFeedback.forEach((feedback) => {
+      data.forEach((feedback) => {
         if (feedback.Category in feedCategory) {
           feedCategory[feedback.Category] += 1;
         }
@@ -252,7 +252,7 @@ const AdminDashboard = () => {
       ];
       setpieFeedback(arrayFeedback);
 
-      userFeedback.forEach((user) => (user.Review === "Good" ? good++ : bad++));
+      data.forEach((user) => (user.Review === "Good" ? good++ : bad++));
 
       const newArray = [
         { name: "Good", value: good },
