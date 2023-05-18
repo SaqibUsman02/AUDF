@@ -171,7 +171,7 @@ const CheckQueryVote = async (req, res) => {
       params.append("Email", email);
     params.append("PostID", QueriesData?.PostID);
 
-    const res= await fetch(`https://audf-server.vercel.app/VoteData?${params.toString()}`,{
+    const res= await fetch(`https://audf-server.vercel.app/VoteData?${params.toString()}` ,{ mode: 'no-cors' },{
       method:"GET",
       headers: {
           Accept: "application/json",
