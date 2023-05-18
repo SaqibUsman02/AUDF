@@ -139,7 +139,7 @@ const AdminDashboard = () => {
       }
       const data = await response.json();
 
-      const dataArrayR = Object.values(data);
+      const dataArrayR = data;
 
       // console.log("new====---------", dataArrayR)
 
