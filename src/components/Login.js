@@ -60,7 +60,6 @@ function Login() {
     const jwTokens = localStorage.getItem('jwToken');
 const names = localStorage.getItem('Name');
 const emails = localStorage.getItem('Email');
-window.alert(jwTokens + "55555555555555555" + names + emails );
 
 
 

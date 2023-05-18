@@ -210,7 +210,8 @@ const AdminDashboard = () => {
       console.error("Error fetching query count:", error);
     }
   };
-
+  let good = 0;
+      let bad = 0;
   const displayFeedback = async () => {
     try {
       const res = await fetch("https://audf-server.vercel.app/findfeedback", {
@@ -226,8 +227,7 @@ const AdminDashboard = () => {
 
       setuserFeedback(data.data);
 
-      let good = 0;
-      let bad = 0;
+    
 
       // userFeedback.forEach((user)=> user.Review ==='Good'? good++ : bad++ )
 
@@ -353,8 +353,8 @@ const AdminDashboard = () => {
                 <Chart data={pieFeedback} />
                 </div>
                 <div className="review-div">
-                <div className="review">Positive: {userReview[0].value}</div>
-                <div className="review">Negetive: {userReview[1].value}</div>
+                <div className="review">Positive: {userReview[0]?.value}</div>
+                <div className="review">Negetive: {userReview[1]?.value}</div>
                 </div>
               </div>
 
