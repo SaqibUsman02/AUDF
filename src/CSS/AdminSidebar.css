@@ -2,12 +2,12 @@
     background-color: aqua;
 } */
 .admin-side-bar { 
-    height: fit-content;
+    height: 100vh;
    display: flex;
    /* align-items: center; */
    flex-direction: column;
    background-color: #3C4858;
-   height: auto;
+   /* height: auto; */
 
   /* flex: .18; */
   /* width: 18%; */

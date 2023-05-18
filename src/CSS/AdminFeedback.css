@@ -20,53 +20,49 @@
   }
 
 .side-bar-div{
-    /* margin-right: 1em; */
-    /* background-color: brown; */
-    margin-left: -6em;
-
+    margin-right: 1em;
 }
-.report-container{
-    background-color: #fafafa  ;
-    display: flex;
+.feedback-container{
+    background-color: #fafafa   ;
+     margin-top: 1em;
+     margin-bottom: 1em;
+    display: flex; 
     flex-direction: row;
     justify-content: center;
-    width: 73%;
+    width: fit-content;
     height: fit-content;
-
-    /* padding-left: .5rem; */
+    /* margin-top: 1em; */
+  
+    padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
-    padding-bottom: 2rem;
-
+    /* margin-bottom: 1em; */
+    margin-left: 3em;
     border-radius: .3em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-/* margin-left: 2em; */
     box-shadow: 1px 1px 3px #878787; 
     overflow-x: hidden;
 }
 .main-div{
-    /* background-color: rgb(77, 176, 11);   */
+    /* background-color: rgb(77, 176, 11); */
     height: fit-content;
 }
 
 
-
-
-h5{
-      background-color: #577590;
-    width: fit-content;
-    height: fit-content;
-    color: white;
-    font-weight: 500;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 1em;
-    border-radius: .2em;
-    font-size: 1rem;
-  /* box-shadow: 1px 1px 3px #878787;  */
+#feedback-stats-head{
+    
+        background-color: #577590;
+        color: white;
+        width: fit-content;
+        height: fit-content;
+        font-weight: 500;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin: 1.5em;
+        border-radius: .2em;
+        font-size: 1rem;
+    
 
 }  
 .name {
@@ -82,11 +78,11 @@ h5{
     justify-content: center;
     align-items: center;
     /* background-color: coral; */
-    margin-right:2em ;
 }
 
 .name{
-
+    /* background-color: #ffcc00; */
+    /* width: fit-content; */
     display: flex;
     margin-left: 1em;
     justify-content: center;
@@ -96,31 +92,46 @@ h5{
 .main-div{
     margin-left: 2em;
     width: 50em;
-    /* background-color: aqua; */
 }
-.report-header{
+.feedback-header{
     border-radius: 4px;
-    background-color: #577590;
+   color: white;
     height: max-content;
     box-shadow: 1px 1px 3px #878787; 
-
+    background-color: #577590;
+    width: 100%;
     display: grid;
-    grid-template-columns: .3fr 1.4fr .3fr;
+    grid-template-columns: .3fr 1fr .4fr;
     padding: .5em;
     font-weight: 500;
-    margin-right: 2em;
-    color: white;
-
-    
+   
 }
 
 .header-option{
+    /* background-color: aqua; */
     font-size: 1rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #272727;
     margin-left: 1em;
 }
 
+#feedback-category{
+    /* background-color: #ffcc00; */
+    color: white;
+    width: 100%;
+}
+#desciption-category{
+    /* background-color: blue; */
+    color: white;
+
+    width: 130%;
+}
+#category{
+}
+#fedback-desc{
+    width: 140%;
+    font-size: 1rem;
+}
 .report-detail{
     /* background-color: #ffcc00; */
     display: grid;
@@ -131,18 +142,17 @@ h5{
     height: 6em;
     border-radius: 3em;
 }
-.report1{
+.feedback1{
     margin-top: 2em;
-        background-color: #fafafa;
         box-shadow: 1px 1px 3px #878787; 
-        /* margin-left: 1.5em; */
-        /* margin-right: 1.5em; */
+        margin-left: 1em;
         padding: 1em;
         border-radius: 4px;
-        width: 103%;
+        width: 97%;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        background-color: #fafafa;
     } 
     .deatils{
         background-color: #fafafa;
@@ -159,17 +169,9 @@ align-items: center;
         
     }
 
-    
-    #report-category{
-        /* background-color: #ffcc00; */
-        padding-top: .5em;
+    #category{
         font-weight: bold;
         font-size: 1rem;
-    }
-
-    #report-desc{
-        font-size: .9rem;
-
     }
     .detals-option{
        display: flex;
@@ -178,6 +180,11 @@ align-items: center;
        font-size: .7rem;
         padding-left: 1rem;
        /* background-color: #d4d3d3; */
+    }
+
+
+    .header-option{
+        /* border: 1px solid black; */
     }
 
     #status-buttons{
@@ -192,7 +199,7 @@ align-items: center;
         /* padding-left: 2rem; */
     }
     #view-btn{
-        background-color: #c5c5c5;
+        background-color: #272727;
         padding-left: .5rem;
         padding-right: .5rem;
         margin-top: .3rem;

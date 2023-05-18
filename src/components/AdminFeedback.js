@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../CSS/AdminReport.css";
+import "../CSS/AdminFeedback.css";
 import AdminSidebar from "./AdminSidebar";
 import avatar from "../images/usman.jpeg";
 import Adminuseless from "./Adminuseless";
+import Adminuseless2 from "./Adminuseless2";
 
-const AdminReport = () => {
+const AdminFeedback = () => {
   const Navigate = useNavigate();
-  const [userReports, setuserReports] = useState([""]);
+  const [userFeedback, setuserFeedback] = useState([]);
 
-  const displayReports = async () => {
-    
+  const displayFeedback = async () => {
     try {
-      const res = await fetch("/findreport", {
+      const res = await fetch("/findfeedback", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -22,9 +22,9 @@ const AdminReport = () => {
       });
 
       const data = await res.json();
-  
 
-      setuserReports(data.data  );
+
+      setuserFeedback(data.data);
 
 
       if (!res.status === 200) {
@@ -33,43 +33,32 @@ const AdminReport = () => {
       }
     } catch (err) {
       console.log(err);
-      Navigate("/login");
+      // Navigate('/login');
     }
-  };
-  
-  useEffect (() =>{
-    displayReports();
-  }, [])
+  }; 
+ 
 
-
-
+  useEffect(() => {
+    displayFeedback();
+  }, []);
 
   return (
     <>
       <div className="admin-container">
-      <div className="side-bar-div">
+      <div className="feed-side-bar-div">
             <AdminSidebar />
           </div>
-        <div className="report-container">
-          
+        <div className="feedback-container">
+        
           <div className="all-reports">
-            <h5 id="report-stats">Reports</h5>
-     
-
-
-
+            <h5 id="feedback-stats-head">Feedback</h5>
             <div className="col-md-12 col-lg-12  col-xl-12">
-          {/* <Adminuseless/> */}   
-
-              {  userReports.map((QueriesData) => {
-              return (
-
-                <Adminuseless
-                key={QueriesData._id}
-                QueriesData={QueriesData}
+              {userFeedback.map((FeedbackData) => {
+              return ( <Adminuseless2
+                  key={FeedbackData._id}
+                  FeedbackData={FeedbackData}
                 />
-                
-                )
+              )
               })}
             </div>
           </div>
@@ -79,4 +68,4 @@ const AdminReport = () => {
   );
 };
 
-export default AdminReport;
+export default AdminFeedback;
