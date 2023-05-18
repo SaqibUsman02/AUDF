@@ -41,7 +41,7 @@ const Dashboard_Header = () => {
         },
         credentials: "include"
     });
-      const data = await res;
+      const data = await res.json();
       window.alert("444444444444444" + res.name);
       window. alert("5555555" + res.Email);
 
