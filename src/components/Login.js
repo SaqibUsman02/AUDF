@@ -59,7 +59,7 @@ function Login() {
     const jwToken = localStorage.getItem('jwToken');
 const name = localStorage.getItem('Name');
 const email = localStorage.getItem('Email');
-    alert(jwToken + "55555555555555555" + name + email);
+    window.alert(jwToken + "55555555555555555" + name + email);
 
 
 
