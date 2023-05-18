@@ -155,6 +155,8 @@ const AdminDashboard = () => {
       data.forEach((docs) => {
         if (docs.Category in categoryCounts) {
           categoryCounts[docs.Category] += 1;
+        } else {
+          categoryCounts.Other += 1; // Increment the "Other" count for unrecognized categories
         }
       });
 
