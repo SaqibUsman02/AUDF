@@ -11,6 +11,8 @@ import { useNavigate } from "react-router-dom";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { v4 as uuid } from "uuid";
+import CommentData from "./CommentData";
+
 
 import saqib from "../images/avatar.png";
 import usman from "../images/usman.jpeg";
@@ -631,77 +633,10 @@ const CheckCommentVote = async (commentid) => {
 
           
           
-          {GetCommentData.map(comment => {
-
-            // CheckCommentVote(comment?._id);
-
-
-            return (
-      <div className="profile-div ms-1 ps-2 pr-1 mb-1 border border-white border-2 rounded-end shadow-lg mb-2">
-        <Row key={comment?.PostID}>
-      <div className="headerr circular--portrait d-inline-block mt-1 mb-1" 
-            >
-                      <img
-                        src={comment?.Photo}
-                        alt="logo"
-                        className="user-image mb-1 mt-1 ms-1"
-                        onClick={() => otherUserProfile(QueriesData?.UserID)}
-                        />
-                      <h4> {comment?.Name}</h4>
-                    </div>
-                    <div className="news ms-2">
-        {/* <p className="question-title mt-2">
-          {comment?.comment}
-          
-        </p> */}
-
-        <p className="question-details">{comment?.comment}</p>
-
-        <p className="question-details" style={{ textAlign: 'right', paddingRight: '10px' }}>{new Date(comment?.CreatedAt).toLocaleString()}</p>
-
-
-      </div>
-      <div>
-        <div className="icon-div">
-          <Row>
-            <Col
-              style={{ color: CommentVoteData =="upvote" ? "#fdc20c" : "blue" }}
-              className="col1  pb-1 pt-1 "
-              onClick={() => Query_CommentVote(comment?._id,comment?.Upvote, "upvote")}
-              name="upvote"
-              // value= "vvv"
-                            // value={queryVote.UpVote}
-              // value="UpVote"
-
-            >
-              {" "}
-              <p style={{ color: CommentVoteData =="upvote" ? "#fdc20c" : "white" }}> Upvote ({comment?.Upvote})</p>{" "}
-              <FontAwesomeIcon icon={faThumbsUp} className="ps-1" />
-            </Col>
-            <Col
-            style={{ color: CommentVoteData=="devote" ? "#fdc20c" :"white" }}
-              className="col1 pb-1 pt-1"
-              onClick={(e) => Query_CommentVote(comment?._id,comment?.Devote, "devote")}
-              name="devote"
-              // value={queryData.Devote}
-              // value={"DeVote"}
-            >
-              {" "}
-              <p   style={{ color: CommentVoteData =="devote" ? "#fdc20c" :"white" }}>Devote ({comment?.Devote})</p>{" "}
-              <FontAwesomeIcon icon={faThumbsDown} className="ps-1 " />
-            </Col>
-            
-          </Row>
-        </div>
-      </div>
-      </Row>
-
-      </div>
-            );
-
-
-                    
-      })}
+          {GetCommentData && GetCommentData.map((comment) => (
+            <CommentData key={comment._id} comment={comment} QueriesData={QueriesData?.PostID} />
+          ))
+          }
         </Container>
       </Modal.Body>
       <Modal.Footer>
