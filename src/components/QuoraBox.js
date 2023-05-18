@@ -195,7 +195,7 @@ const QuoraBox = () => {
                           type="text"
                           placeholder="Click here to search."
                           name="search"
-                          className="ps-2 pe-2"
+                          className="ps-2 pe-2 w-5"
                           onChange={(e)=> setsearch(e.target.value)}
                           
                         />{" "}
