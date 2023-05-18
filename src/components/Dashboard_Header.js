@@ -51,6 +51,8 @@ const Dashboard_Header = () => {
         throw error;
       }
     } catch (err) {
+      alert("dashboard catch  header");
+
       console.log(err);
       Navigate("/login");
     }
