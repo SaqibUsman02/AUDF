@@ -23,7 +23,7 @@ const Comment = () => {
  const navigate = useNavigate();
  const [CommentData, SetCommentData] = useState({
   // ID: JSON.parse(localStorage.getItem('Email')),
-    ID: cookies.Email,
+    ID: localStorage.getItem('Email'),
   PostID: JSON.parse(localStorage.getItem('PostID'))  ,
   comment: "",
  });

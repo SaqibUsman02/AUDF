@@ -11,7 +11,7 @@ const Report = () => {
  const navigate = useNavigate();
  const [FeedbackData, SetFeedbackData] = useState({
   // ID: JSON.parse(localStorage.getItem('Email')),
-  ID: cookies.Name,
+  ID: localStorage.getItem('Name'),
   Category: "",
   Feedback: "",
  });

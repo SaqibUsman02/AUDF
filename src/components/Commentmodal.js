@@ -28,8 +28,8 @@ const CommentModal = ({ isOpen, onRequestClose }) => {
 
   const [CommentData, SetCommentData] = useState({
    // ID: JSON.parse(localStorage.getItem('Email')),
-     ID: cookies.Email,
-     Name: cookies.Name,
+     ID: localStorage.getItem('Email'),
+     Name: localStorage.getItem('Name'),
    PostID: ""  ,
    comment: "",
   });

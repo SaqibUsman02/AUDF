@@ -20,7 +20,7 @@ const Dashboard_Header = () => {
 
   const { state, dispatch } = useContext(userContext);
   const [cookies, setCookie] = useCookies();
-  const name= cookies.Name;
+  const name= localStorage.getItem('Name');
   const Navigate = useNavigate();
   const [userDataa, setUserDataa] = useState("");
 

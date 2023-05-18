@@ -111,7 +111,7 @@ const Dashboard_feed = ({ QueriesData }) => {
 
 // -----------------------------------------------------
 const [queryVote, setQueryVote] = useState({
-  UserID: cookies.Email,
+  UserID: localStorage.getItem('Email'),
   PostID: QueriesData?.PostID,
   Type:  " ",
   UpVote: QueriesData?.Upvote,
@@ -164,7 +164,7 @@ const CheckQueryVote = async (req, res) => {
  
   try {
     const params = new URLSearchParams();
-    params.append("Email", cookies.Email);
+    params.append("Email", localStorage.getItem('Email'));
     params.append("PostID", QueriesData?.PostID);
 
     const res= await fetch(`https://audf-server.vercel.app/VoteData?${params.toString()}`,{
@@ -210,7 +210,7 @@ const CheckCommentVote = async (commentid) => {
  
   try {
     const params = new URLSearchParams();
-    params.append("Email", cookies.Email);
+    params.append("Email", localStorage.getItem('Email'));
     params.append("PostID", QueriesData?.PostID);
     params.append("CommentID", commentid);
 
@@ -322,8 +322,8 @@ const CheckCommentVote = async (commentid) => {
 
   const [CommentData, SetCommentData] = useState({
       Photo: "",
-     ID: cookies.Email,
-     Name: cookies.Name,
+     ID: localStorage.getItem('Email'),
+     Name: localStorage.getItem('Name'),
    PostID: ""  ,
    comment: "",
   });
@@ -424,7 +424,7 @@ const CheckCommentVote = async (commentid) => {
 
 
   const [CommentVote, setCommentVote] = useState({
-    UserID: cookies.Email,
+    UserID: localStorage.getItem('Email'),
     PostID: QueriesData?.PostID,
     CommentID: "",
     Type:  " ",

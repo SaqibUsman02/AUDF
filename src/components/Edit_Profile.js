@@ -44,7 +44,7 @@ const Edit_Profile = () => {
 
   const [change_pass, set_change_pass] = useState({
     // Email: JSON.parse(localStorage.getItem('Email')),
-    Email: cookies.Email,
+    Email: localStorage.getItem('Email'),
     Password: "",
     New_Password: "",
     Confirm_Password: "",
@@ -52,7 +52,7 @@ const Edit_Profile = () => {
 
   const [user, setUser] = useState({
     // Email: JSON.parse(localStorage.getItem('Email')),
-    Email: cookies.Email,
+    Email: localStorage.getItem('Email'),
     name: Getdata?.name,
     Password: "",
     Phone: Getdata?.Phone,
@@ -168,7 +168,7 @@ const Edit_Profile = () => {
   const [postImage, setPostImage] = useState("");
 
   const Navigate = useNavigate();
-  const Email = cookies.Email;
+  const Email = localStorage.getItem('Email');
 
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];

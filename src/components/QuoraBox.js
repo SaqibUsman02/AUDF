@@ -29,8 +29,8 @@ const QuoraBox = () => {
     const [QuoraBox_queryData, set_QuoraBox_queryData] = useState({
       // UserID: JSON.parse(localStorage.getItem('Email')),
       // UserName: JSON.parse(localStorage.getItem('name')),
-      UserID: cookies.Email,
-      UserName: cookies.Name,
+      UserID: localStorage.getItem('Email'),
+      UserName: localStorage.getItem('Name'),
       PostID: uuid(),
       QueryCategory: "",
       QueryTitle: "",

@@ -47,7 +47,7 @@ const navigate = useNavigate();
 const [ReportData, SetReportData] = useState({
  // ID: JSON.parse(localStorage.getItem('Email')),
  PostID: PostID,
- ID: cookies.Name,
+ ID: localStorage.getItem('Name'),
  Category: "",
  Report: "",
 });
