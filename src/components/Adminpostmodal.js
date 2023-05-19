@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Swal from 'sweetalert2';
+
 
 const Adminpostmodal = ({ onClose, PostID }) => {
   const [userQueries, setuserQueries] = useState([]);
