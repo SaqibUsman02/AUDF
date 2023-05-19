@@ -14,10 +14,10 @@ flex-direction: column;
  
 }
 
-.active {
+/* .active {
   background-color: green;
-  /* Add other styles as needed */
-}
+  Add other styles as needed
+} */
 
 .suspended {
   background-color: red;
