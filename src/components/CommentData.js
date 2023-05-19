@@ -172,7 +172,7 @@ const Navigate =  useNavigate();
     <div className="icon-div">
       <Row>
         <Col
-          style={{ color: CommentVoteData =="upvote" ? "#fdc20c" : "blue" }}
+          style={{ color: CommentVoteData =="upvote" ? "#fdc20c" : "white" }}
           className="col1  pb-1 pt-1 "
           onClick={() => Query_CommentVote(comment?._id,comment?.Upvote, "upvote")}
           name="upvote"
