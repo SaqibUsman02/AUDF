@@ -27,7 +27,6 @@ const Dashboard_Header = () => {
   const GetImage = async (req, res) => {
     try {
 
-      window. alert("5555555wwwwwwww" + (localStorage.getItem('Email')));
 
       const params = new URLSearchParams();
       const email = localStorage.getItem('Email');
@@ -43,18 +42,15 @@ const Dashboard_Header = () => {
     });
     // console.log("435342545435" + res.Email);
     const data = await res.json();
-      window.alert("444444444444444" + data?.name);
-      window. alert("5555555" + data?.Email);
+      
 
       setUserDataa(data);
 
       if (!res.status === 200) {
-        alert("dashboard header");
         const error = new Error(res.error);
         throw error;
       }
     } catch (err) {
-      alert("dashboard catch  header");
 
       console.log(err);
       Navigate("/login");
@@ -71,7 +67,7 @@ const Dashboard_Header = () => {
           <Container className="d-flex align-items-center justify-content-center">
             <div class="header">
               <img src={AU} alt="logo" />
-              <h3>AU Discussion Forum</h3>
+              <h3 className="Heading">AU Discussion Forum</h3>
             </div>
 
             {/* <div>       

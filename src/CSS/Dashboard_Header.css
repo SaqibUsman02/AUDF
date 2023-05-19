@@ -150,3 +150,12 @@
     margin-left: 50px;  
 }
 
+.Heading {
+    color: #f0bd15;
+    font-weight: 700 ;
+    letter-spacing: .015em;
+    width: 300px;
+    font-family: 'Roboto';
+    font-style: normal;
+    margin-left: 50px;  
+}
