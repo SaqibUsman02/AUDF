@@ -46,7 +46,7 @@ function Practice() {
             <Carousel.Item>
               <Row className="align-items-center">
                 <Col className="col-5">
-                  <h1>Practice this now</h1>
+                  <h1>Prasdasdsad sd sad sathis now</h1>
                   <p>
                     Work hard work hard Work hard work hard Work hard work hard
                     Work hard work hard Work hard work hard Work hard work hard
