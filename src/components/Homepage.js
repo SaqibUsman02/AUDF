@@ -48,7 +48,7 @@ function Practice() {
                 <Col className="col-5">
                   <h1>Gather to get answers</h1>
                   <p>
-                  Join a vibrant community of students and educators, coming together to share insights and collectively uncover the answers you seek, creating a collaborative environment of learning and growth. {" "}
+                  Join a vibrant community  of students and educators, coming together to share insights and collectively uncover the answers you seek, creating a collaborative environment of learning and growth. {" "}
                   </p>
                   <Row >
                     <Col className="col-8">
