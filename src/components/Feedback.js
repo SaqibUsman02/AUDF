@@ -33,7 +33,7 @@ const App = () => {
 
   const {ID,Category,Feedback} = FeedbackData;
 
-  const res = await fetch("https://audf-server.vercel.app/feedback", {
+  const res = await fetch("https://df-server.vercel.app/feedback", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

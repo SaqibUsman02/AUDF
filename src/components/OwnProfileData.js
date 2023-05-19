@@ -28,7 +28,7 @@ const OwnPrac = () => {
           const email = localStorage.getItem('Email');
           // const encodedEmail = encodeURIComponent(email);
           params.append("Email", email);
-            const res= await fetch(`https://audf-server.vercel.app/OwnQuestion?${params.toString()}`,{
+            const res= await fetch(`https://df-server.vercel.app/OwnQuestion?${params.toString()}`,{
                 method:"GET",
                 headers: {
                     Accept: "application/json",
@@ -62,7 +62,7 @@ const OwnPrac = () => {
           const email = localStorage.getItem('Email');
           // const encodedEmail = encodeURIComponent(email);
           params.append("Email", email);
-          const res = await fetch(`https://audf-server.vercel.app/OwnQuestionn?${params.toString()}`, {
+          const res = await fetch(`https://df-server.vercel.app/OwnQuestionn?${params.toString()}`, {
             method:"GET",
                 headers: {
                     Accept: "application/json",

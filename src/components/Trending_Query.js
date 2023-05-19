@@ -21,7 +21,7 @@ function Trending_Query() {
   const TrendingQuery = async() => {
 
     try{
-        const res= await fetch('https://audf-server.vercel.app/trendingQuery',{
+        const res= await fetch('https://df-server.vercel.app/trendingQuery',{
             method:"GET",
             headers: {
                 Accept: "application/json",

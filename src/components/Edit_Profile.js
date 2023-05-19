@@ -26,7 +26,7 @@ const Edit_Profile = () => {
       const email = localStorage.getItem('Email');
       // const encodedEmail = encodeURIComponent(email);
       params.append("Email", email);
-      const res = await fetch(`https://audf-server.vercel.app/OwnProfileDetails?${params.toString()}`, {
+      const res = await fetch(`https://df-server.vercel.app/OwnProfileDetails?${params.toString()}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -80,7 +80,7 @@ const Edit_Profile = () => {
     const { Email, name, Password, Phone, Gender, Website, Github, Twitter } =
       user;
 
-    const res = await fetch("https://audf-server.vercel.app/UpdateProfile", {
+    const res = await fetch("https://df-server.vercel.app/UpdateProfile", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -120,7 +120,7 @@ const Edit_Profile = () => {
     e.preventDefault();
     const { Email, Password, New_Password, Confirm_Password } = change_pass;
 
-    const res = await fetch("https://audf-server.vercel.app/change_pass", {
+    const res = await fetch("https://df-server.vercel.app/change_pass", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -151,7 +151,7 @@ const Edit_Profile = () => {
       const email = localStorage.getItem('Email');
       // const encodedEmail = encodeURIComponent(email);
       params.append("Email", email);
-      const res = await fetch(`https://audf-server.vercel.app/OwnQuestionn?${params.toString()}`, {
+      const res = await fetch(`https://df-server.vercel.app/OwnQuestionn?${params.toString()}`, {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -183,7 +183,7 @@ const Edit_Profile = () => {
     const base64 = await convertToBase64(file);
     
     try {
-      const res = await fetch("https://audf-server.vercel.app/Uploads", {
+      const res = await fetch("https://df-server.vercel.app/Uploads", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

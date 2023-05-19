@@ -52,7 +52,7 @@ const CommentModal = ({ isOpen, onRequestClose }) => {
     const {ID,Name,PostID,comment} = CommentData;
     window.alert("ooooooooooooooo" + comment);
   
-    const res = await fetch("https://audf-server.vercel.app/comment", {
+    const res = await fetch("https://df-server.vercel.app/comment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -97,7 +97,7 @@ const CommentModal = ({ isOpen, onRequestClose }) => {
       //     console.error(error);
       //   });
 
-      const res= await fetch(`https://audf-server.vercel.app/getAllComment?${params.toString()}`,{
+      const res= await fetch(`https://df-server.vercel.app/getAllComment?${params.toString()}`,{
         method:"GET",
         headers: {
             Accept: "application/json",

@@ -49,7 +49,7 @@ function Feed() {
 
     const { UserID, PostID, QueryCategory, QueryTitle, QueryDetails, QueryTags } = queryData;
 
-    const res = await fetch("https://audf-server.vercel.app/Question", {
+    const res = await fetch("https://df-server.vercel.app/Question", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

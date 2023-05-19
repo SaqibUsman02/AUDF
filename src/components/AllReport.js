@@ -12,7 +12,7 @@ const AllReport = () => {
     const callAboutPage = async() => {
   
         try{
-            const res= await fetch('/FetchReport',{
+            const res= await fetch('https://df-server.vercel.app/FetchReport',{
                 method:"GET",
                 headers: {
                     Accept: "application/json",

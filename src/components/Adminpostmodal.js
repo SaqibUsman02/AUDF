@@ -37,7 +37,7 @@ const Adminpostmodal = ({ onClose, PostID }) => {
       const params = new URLSearchParams();
       params.append("postID", PostID);
 
-      await fetch(`https://audf-server.vercel.app/deletequery?${params.toString()}`, {
+      await fetch(`https://df-server.vercel.app/deletequery?${params.toString()}`, {
         method: "DELETE",
         headers: {
           Accept: "application/json",

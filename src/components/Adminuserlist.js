@@ -12,7 +12,7 @@ const AdminUserslist = () => {
 
   const getUserslist = async () => {
     try {
-      const response = await fetch('https://audf-server.vercel.app/usersList', {
+      const response = await fetch('https://df-server.vercel.app/usersList', {
         method: 'GET',
         headers: {
           Accept: 'application/json',

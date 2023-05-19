@@ -36,7 +36,7 @@ function Login() {
 
     e.preventDefault();
 
-    const res = await fetch('https://audf-server.vercel.app/login', {
+    const res = await fetch('https://df-server.vercel.app/login', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -106,7 +106,7 @@ const emails = localStorage.getItem('Email');
     e.preventDefault();
     const { Email} = Enter_Email;
 
-    const res = await fetch("https://audf-server.vercel.app/Forgot_Pass", {
+    const res = await fetch("https://df-server.vercel.app/Forgot_Pass", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -136,7 +136,7 @@ const emails = localStorage.getItem('Email');
 
   const GoogleAuth = () => {
 		window.open(
-			`http://localhost:3000/auth/google/callback`,
+			`https://df-server.vercel.app/auth/google/callback`,
 			"_self"
 		);
 

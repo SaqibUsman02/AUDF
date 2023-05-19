@@ -31,7 +31,7 @@ const Contact = () => {
 
     const { name, Email,Subject, Message } = userData;
 
-    const res = await fetch("https://audf-server.vercel.app/contact", {
+    const res = await fetch("https://df-server.vercel.app/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

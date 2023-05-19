@@ -29,7 +29,7 @@ const Profile = () => {
         try{
           const params = new URLSearchParams();
           params.append("UserID", UserID);
-          const res= await fetch(`https://audf-server.vercel.app/getOtherProfileQuery?${params.toString()}`,{ 
+          const res= await fetch(`https://df-server.vercel.app/getOtherProfileQuery?${params.toString()}`,{ 
                 method:"GET",
                 headers: {
                     Accept: "application/json",
@@ -61,7 +61,7 @@ const Profile = () => {
         try{
           const params = new URLSearchParams();
           params.append("UserID", UserID);
-          const res= await fetch(`https://audf-server.vercel.app/getOtherProfileUser?${params.toString()}`,{ 
+          const res= await fetch(`https://df-server.vercel.app/getOtherProfileUser?${params.toString()}`,{ 
                 method:"GET",
                 headers: {
                     Accept: "application/json",

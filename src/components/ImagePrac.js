@@ -7,7 +7,7 @@ const ImagePrac = () => {
  const newImage=" ";
   const createPost = async (e) => {
     try {
-      const res = await fetch("https://audf-server.vercel.app/Upload", {
+      const res = await fetch("https://df-server.vercel.app/Upload", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

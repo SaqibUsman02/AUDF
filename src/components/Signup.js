@@ -32,7 +32,7 @@ function Signup() {
 
     const { name, Email, Password, Confirm_Password } = user;
 
-    const res = await fetch("https://audf-server.vercel.app/signup", {
+    const res = await fetch("https://df-server.vercel.app/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -73,7 +73,7 @@ function Signup() {
   const googleAuth = async() => {
 
     try{
-        const res= await fetch(`https://audf-server.vercel.app/auth/google/callback`, { mode: 'no-cors' },{
+        const res= await fetch(`https://df-server.vercel.app/auth/google/callback`, { mode: 'no-cors' },{
             method: "GET",
             headers: {
                 Accept: "application/json",

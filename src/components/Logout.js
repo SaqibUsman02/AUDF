@@ -8,7 +8,7 @@ const Logout = () => {
 
     const Navigate = useNavigate();
     useEffect(() => {
-        fetch('https://audf-server.vercel.app/logout',{
+        fetch('https://df-server.vercel.app/logout',{
             method: "GET",
             headers: {
                 Accept: "application/json",

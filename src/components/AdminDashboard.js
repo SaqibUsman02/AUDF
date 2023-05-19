@@ -35,7 +35,7 @@ const AdminDashboard = () => {
 
   const getUserscount = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/usersCount");
+      const response = await fetch("https://df-server.vercel.app/usersCount");
       if (!response.status == 200 ) {
         throw new Error("Network response was not ok");
       }
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
 
   const getQuerycount = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/queryCount");
+      const response = await fetch("https://df-server.vercel.app/queryCount");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -87,7 +87,7 @@ const AdminDashboard = () => {
 
   const getQueryCategory = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/showquery");
+      const response = await fetch("https://df-server.vercel.app/showquery");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -133,7 +133,7 @@ const AdminDashboard = () => {
 
   const getReportCategory = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/findreport");
+      const response = await fetch("https://df-server.vercel.app/findreport");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -179,7 +179,7 @@ const AdminDashboard = () => {
 
   const getUserswithdate = async () => {
     try {
-      const response = await fetch("https://audf-server.vercel.app/finduserwithdate");
+      const response = await fetch("https://df-server.vercel.app/finduserwithdate");
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
@@ -216,7 +216,7 @@ const AdminDashboard = () => {
       let bad = 0;
   const displayFeedback = async () => {
     try {
-      const res = await fetch("https://audf-server.vercel.app/findfeedback",{
+      const res = await fetch("https://df-server.vercel.app/findfeedback",{
         method: "GET",
         headers: {
           Accept: "application/json",
