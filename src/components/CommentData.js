@@ -164,7 +164,7 @@ const Navigate =  useNavigate();
 
     <p className="question-details">{comment?.comment}</p>
 
-    <p className="question-details" style={{ textAlign: 'right', paddingRight: '10px' }}>{new Date(comment?.VotedAt).toLocaleString()}</p>
+    <p className="question-details" style={{ textAlign: 'right', paddingRight: '10px' }}>{comment?. CreatedAt.toLocaleString()}</p>
 
 
   </div>
