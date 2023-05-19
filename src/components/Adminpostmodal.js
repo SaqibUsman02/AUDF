@@ -56,6 +56,35 @@ const Adminpostmodal = ({ onClose, PostID }) => {
     }
   };
 
+
+
+  const handleButtonClick = () => {
+
+    deletePost();
+    deleteReport();
+
+    Swal.fire(
+      'Action Sucessfull!',
+      'Query and Report both are deleted!',
+      'success'
+    )
+    
+  };
+
+  const handleButtonClick2 = () => {
+
+    deleteReport();
+
+    Swal.fire(
+      'Action Sucessfull!',
+      'Only Report is deleted!',
+      'success'
+    )
+    
+  };
+
+
+
   useEffect(() => {
     displayQueries();
   }, []);
@@ -79,9 +108,9 @@ const Adminpostmodal = ({ onClose, PostID }) => {
           <Button variant="secondary" onClick={onClose}>
             Close
           </Button>
-          <Button variant="primary" style={{ backgroundColor: 'red' }} onClick={deletePost } >  Accept
+          <Button variant="primary" style={{ backgroundColor: 'red' }} onClick={handleButtonClick} >  Accept
           </Button>
-          <Button variant="primary" style={{ backgroundColor: 'green' }}>
+          <Button variant="primary" style={{ backgroundColor: 'green' }} onClick={handleButtonClick2} >
             Decline
           </Button>
         </Modal.Footer>

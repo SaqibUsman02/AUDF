@@ -208,9 +208,7 @@ function Practice() {
                 
                 <div>
                 <p>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                Explore an extensive range of questions and unlock a world of knowledge, where each query holds the potential to expand your understanding and broaden your horizons.
                 </p>
                 </div>
               </Col>

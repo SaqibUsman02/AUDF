@@ -167,7 +167,7 @@ const AdminDashboard = () => {
         { name: "Abusive", value: categoryCounts.Abusive },
         { name: "Bullying", value: categoryCounts.Bullying },
         { name: "Irrelevant", value: categoryCounts.Irrelevant },
-        { name: "Other", value: categoryCounts.O },
+        { name: "Other", value: categoryCounts.Other },
       ];
 
       setpieReportdata(array3);
