@@ -57,7 +57,7 @@ function Signup() {
         title: 'Invalid Data',
         text: 'Something went wrong!',
         footer: '<a href="">Why do I have this issue?</a>'
-      })      console.log("Invalid Registration");
+      }) ;     console.log("Invalid Registration");
     } else {
       Swal.fire(
         'Email Verification',
