@@ -12,6 +12,7 @@ import { userContext } from "../App";
 import Cookies from 'js-cookie';
 
 import { useCookies } from "react-cookie";
+import Swal from 'sweetalert2';
 
 
 
@@ -33,6 +34,17 @@ function Login() {
 
   const loginUser = async(e) =>{
     
+
+    const handleButtonClick = () => {
+
+      Swal.fire({
+        icon: 'error',
+        title: `Oops... ${Email}`,
+        text: 'Your account is suspended by Admin!',
+        // footer: '<a href="">Why do I have this issue?</a>'
+      });
+      
+    };
 
     e.preventDefault();
 
@@ -74,6 +86,10 @@ const emails = localStorage.getItem('Email');
     }
   }else if(res.status === 400 || !res) {
       window.alert("Invalid Credentials");  
+    }
+    else if(res.status === 500 || !res) {
+      
+      handleButtonClick(Email);
     }else if(res.status === 403 || !res) {
       window.alert("an email send to your account please verify");
     }else{

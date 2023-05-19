@@ -221,7 +221,7 @@ function Practice() {
               <Col xs={3} className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <a class="footer_img">
                   <img src={Footer} alt="logo" />
-                  <h5 className="sss">AU Discussion Forum</h5>
+                  <h4 className="sss">AU Discussion Forum</h4>
                 </a>
                 
                 <div>
@@ -234,7 +234,7 @@ function Practice() {
               </Col>
 
               <Col xs={3} className="col-md-2 col-lg-2 col-xl-2  mx-auto mt-3">
-                <h5 className="">Products</h5>
+                <h4 className="">Products</h4>
                 <div  className="product_div flex flex-col">
                 <span >
                   <a href="#">TheProviders </a>
@@ -252,7 +252,7 @@ function Practice() {
               </Col>
 
               <Col xs={3} className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 className="">Useful Links</h5>
+              <h4 className="">Useful Links</h4>
                 <div  className="product_div flex flex-col">
                 <span >
                   <a href="#">TheProviders </a>
@@ -270,7 +270,7 @@ function Practice() {
               </Col>
 
               <Col xs={3}  className="contact col-md-3 col-lg-4 col-xl-3 mx-auto mt-3 ">
-                <h5>Contact</h5>
+                <h4>Contact</h4>
                 <div className="product_div flex flex-row">
                   <Icon.HouseFill className="h-8"></Icon.HouseFill><span className="ps-2  pt-0">Rawalpindi, Pakistan</span> 
                 </div>
