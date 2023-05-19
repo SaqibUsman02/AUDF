@@ -24,6 +24,7 @@ const AdminContact = () => {
       setContactData(data);
     } catch (err) {
       console.log(err);
+      // asdasd
       // Navigate("/login");
     }
   };
