@@ -4,6 +4,8 @@ import "../CSS/Signup.css";
 import pic from "../images/svg5.svg";
 import { Row, Col, Container, Button, Figure } from "react-bootstrap";
 import google from "../images/google.png"; 
+import Swal from 'sweetalert2';
+
 
 function Signup() {
   const navigate = useNavigate();
@@ -50,10 +52,18 @@ function Signup() {
     const data = await res.json();
 
     if (res.status === 400 ||  !res) {
-      window.alert("Invalid Data");
-      console.log("Invalid Registration");
+      Swal.fire({
+        icon: 'error',
+        title: 'Invalid Data',
+        text: 'Something went wrong!',
+        footer: '<a href="">Why do I have this issue?</a>'
+      })      console.log("Invalid Registration");
     } else {
-      window.alert("An email send to your account please verify.");
+      Swal.fire(
+        'Email Verification',
+        'Check your Inbox!',
+        'success'
+      )
       console.log("Successfully Register");
       navigate("/login");
 
