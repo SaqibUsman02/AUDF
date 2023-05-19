@@ -113,7 +113,7 @@
         .map((user) => (
           <div className="grid1" key={user.id}>
             <div className="grid-item">
-        <img className="avatar" id="avatar" src={avatar} alt="" />
+        <img className="avatar" id="avatar" alt="" />
 
               <div className="display-userlist-option" id="name">
                 {user.name}
