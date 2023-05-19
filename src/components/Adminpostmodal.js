@@ -59,6 +59,32 @@ const Adminpostmodal = ({ onClose, PostID }) => {
   };
 
 
+  const deleteReport = async () => {
+ 
+    
+    try {
+      const params = new URLSearchParams();
+      params.append("postID", PostID);
+
+      await fetch(`https://df-server.vercel.app/deleteReport?${params.toString()}`, {
+        method: "DELETE",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },      
+        credentials: "include",
+      });
+
+      // console.log('xxxxxxx', PostID)
+
+      // Refresh the list of queries after deletion
+      // displayQueries();
+      
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
 
   const handleButtonClick = () => {
 
