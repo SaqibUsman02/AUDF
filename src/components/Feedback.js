@@ -47,9 +47,13 @@ const App = () => {
     window.alert("Invalid Data.");
     console.log("Invalid Data");
   }
-  else{
+  else if (res.status === 201){
     window.alert("Successfully Posted");
-    console.log("Successfully Posted");
+    // navigate("/dashboard");
+
+  }
+  else{
+    window.alert("Failed");
     // navigate("/dashboard");
 
   }
