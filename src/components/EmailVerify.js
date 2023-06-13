@@ -13,9 +13,29 @@ const EmailVerify = () => {
     useEffect(() => { 
         const verifyEmailUrl = async () =>{
             try{ 
-                const url= `https://df-kappa.vercel.app/users/${param.id}/verify/${param.token}`;
-                const {data} = await axios.get(url);
-                setValidUrl(true);
+                const res= await fetch(`https://df-kappa.vercel.app/users/${param.id}/verify/${param.token}`,{
+                    method:"GET",
+                    headers: {
+                        Accept: "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    credentials: "include"
+            
+                });
+
+                if(res.status === 200) {
+                    setValidUrl(true);
+                    window.alert("Successfully Posted");
+
+                  }
+                 
+                  else{
+                    setValidUrl(false);
+                    window.alert("Invalid Data.");
+
+                
+                  }
+                
             }
             catch(error){
                 console.log(error);
