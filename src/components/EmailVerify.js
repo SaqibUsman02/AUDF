@@ -13,6 +13,7 @@ const EmailVerify = () => {
     useEffect(() => { 
         const verifyEmailUrl = async () =>{
             try{ 
+                
                 const url= `https://df-server.vercel.app/users/${param.id}/verify/${param.token}`;
                 const {res} = await axios.get(url);
 
