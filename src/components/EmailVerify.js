@@ -14,7 +14,7 @@ const EmailVerify = () => {
         const verifyEmailUrl = async () =>{
             try{ 
                 const res= await fetch(`https://df-kappa.vercel.app/users/${param.id}/verify/${param.token}`,{
-                    method:"GET",
+                    method:"POST",
                     headers: {
                         Accept: "application/json",
                         "Content-Type": "application/json"
