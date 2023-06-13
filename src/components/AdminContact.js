@@ -7,7 +7,7 @@ const AdminContact = () => {
 
   const getAllContact = async () => {
     try {
-      const res = await fetch("https://df-server.vercel.app/ontactadmin", {
+      const res = await fetch("https://df-server.vercel.app/contactadmin", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -24,6 +24,7 @@ const AdminContact = () => {
       setContactData(data);
     } catch (err) {
       console.log(err);
+      // asdasd
       // Navigate("/login");
     }
   };

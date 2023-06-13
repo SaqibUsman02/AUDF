@@ -46,12 +46,9 @@ function Practice() {
             <Carousel.Item>
               <Row className="align-items-center">
                 <Col className="col-5">
-                  <h1>Practice this now</h1>
+                  <h1>Gather to get answers</h1>
                   <p>
-                    Work hard work hard Work hard work hard Work hard work hard
-                    Work hard work hard Work hard work hard Work hard work hard
-                    Work hard work hard Work hard work har Work hard work hard
-                    Work hard work hard Work hard work har{" "}
+                  Join a vibrant community  of students and educators, coming together to share insights and collectively uncover the answers you seek, creating a collaborative environment of learning and growth. {" "}
                   </p>
                   <Row >
                     <Col className="col-8">
@@ -75,12 +72,9 @@ function Practice() {
             <Carousel.Item>
               <Row className="align-items-center">
                 <Col className="col-5">
-                  <h1>Old is Gold.</h1>
+                  <h1>Ask us.</h1>
                   <p>
-                    Work hard work hard Work hard work hard Work hard work hard
-                    Work hard work hard Work hard work hard Work hard work hard
-                    Work hard work hard Work hard work har Work hard work hard
-                    Work hard work hard Work hard work har{" "}
+                  Feel confident and empowered to ask your questions, as our dedicated community stands ready to provide guidance, support, and solutions to help you navigate any topic or challenge you encounter.{" "}
                   </p>
                   <Row className="">
                     <Col className="col-8">
@@ -145,14 +139,10 @@ function Practice() {
               </Col>
               <Col className="col-5">
                 <h2 className="mt-3">
-                  Group option make it easier to get answer .
+                Construct your queries and find expert answers: 
                 </h2>
                 <p className="mt-3">
-                  use group featuer to do this do that do that and do this why
-                  cant do this why cant do that do that plz use pur group
-                  feature. use group featuer to do this do that do that and do
-                  this why cant do this why cant do that do that plz use pur
-                  group feature{" "}
+                Craft your inquiries with precision and delve into a network of experts, finding comprehensive and reliable answers that empower you to deepen your understanding and make informed decisions. {" "}
                 </p>
                 <a href="#" className="more-btn mt-1">
                   Read More <Icon.ArrowRight></Icon.ArrowRight>{" "}
@@ -167,14 +157,10 @@ function Practice() {
             <Row className="align-items-center">
               <Col className="col-5">
                 <h2 className="mt-3">
-                  Group option make it easier to get answer .
+                Gather to get answers:  
                 </h2>
                 <p className="mt-3">
-                  use group featuer to do this do that do that and do this why
-                  cant do this why cant do that do that plz use pur group
-                  feature. use group featuer to do this do that do that and do
-                  this why cant do this why cant do that do that plz use pur
-                  group feature{" "}
+                Join a vibrant community of students and educators, coming together to share insights and collectively uncover the answers you seek, creating a collaborative environment of learning and growth. {" "}
                 </p>
                 <a href="#" className="more-btn mt-3">
                   Read More <Icon.ArrowRight></Icon.ArrowRight>{" "}
@@ -196,14 +182,10 @@ function Practice() {
               </Col>
               <Col className="col-5">
                 <h2 className="mt-3">
-                  Group option make it easier to get answer .
+                Discover the world of your question:  .
                 </h2>
                 <p className="mt-3">
-                  use group featuer to do this do that do that and do this why
-                  cant do this why cant do that do that plz use pur group
-                  feature. use group featuer to do this do that do that and do
-                  this why cant do this why cant do that do that plz use pur
-                  group feature{" "}
+                Explore an extensive range of questions and unlock a world of knowledge, where each query holds the potential to expand your understanding and broaden your horizons. {" "}
                 </p>
                 <a href="#" className="more-btn mt-3">
                   Read More <Icon.ArrowRight></Icon.ArrowRight>{" "}
@@ -221,20 +203,18 @@ function Practice() {
               <Col xs={3} className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                 <a class="footer_img">
                   <img src={Footer} alt="logo" />
-                  <h5 className="sss">AU Discussion Forum</h5>
+                  <h4 className="sss">AU Discussion Forum</h4>
                 </a>
                 
                 <div>
                 <p>
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
+                Explore an extensive range of questions and unlock a world of knowledge, where each query holds the potential to expand your understanding and broaden your horizons.
                 </p>
                 </div>
               </Col>
 
               <Col xs={3} className="col-md-2 col-lg-2 col-xl-2  mx-auto mt-3">
-                <h5 className="">Products</h5>
+                <h4 className="">Products</h4>
                 <div  className="product_div flex flex-col">
                 <span >
                   <a href="#">TheProviders </a>
@@ -252,7 +232,7 @@ function Practice() {
               </Col>
 
               <Col xs={3} className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-              <h5 className="">Useful Links</h5>
+              <h4 className="">Useful Links</h4>
                 <div  className="product_div flex flex-col">
                 <span >
                   <a href="#">TheProviders </a>
@@ -270,7 +250,7 @@ function Practice() {
               </Col>
 
               <Col xs={3}  className="contact col-md-3 col-lg-4 col-xl-3 mx-auto mt-3 ">
-                <h5>Contact</h5>
+                <h4>Contact</h4>
                 <div className="product_div flex flex-row">
                   <Icon.HouseFill className="h-8"></Icon.HouseFill><span className="ps-2  pt-0">Rawalpindi, Pakistan</span> 
                 </div>

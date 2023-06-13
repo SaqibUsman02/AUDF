@@ -12,6 +12,7 @@ import UsersChart from "./UsersChart";
 import AdminSidebar from "./AdminSidebar";
 import { useState, useEffect } from "react";
 import NavBar from "./NavBar";
+// s
 
 const AdminDashboard = () => {
   const [userCount, setUserCount] = useState(0);
@@ -166,7 +167,7 @@ const AdminDashboard = () => {
         { name: "Abusive", value: categoryCounts.Abusive },
         { name: "Bullying", value: categoryCounts.Bullying },
         { name: "Irrelevant", value: categoryCounts.Irrelevant },
-        { name: "Other", value: categoryCounts.O },
+        { name: "Other", value: categoryCounts.Other },
       ];
 
       setpieReportdata(array3);

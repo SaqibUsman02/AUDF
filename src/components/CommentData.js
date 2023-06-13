@@ -164,7 +164,7 @@ const Navigate =  useNavigate();
 
     <p className="question-details">{comment?.comment}</p>
 
-    <p className="question-details" style={{ textAlign: 'right', paddingRight: '10px' }}>{new Date(comment?.VotedAt).toLocaleString()}</p>
+    <p className="question-details" style={{ textAlign: 'right', paddingRight: '10px' }}>{comment?. CreatedAt.toLocaleString()}</p>
 
 
   </div>
@@ -172,7 +172,7 @@ const Navigate =  useNavigate();
     <div className="icon-div">
       <Row>
         <Col
-          style={{ color: CommentVoteData =="upvote" ? "#fdc20c" : "blue" }}
+          style={{ color: CommentVoteData =="upvote" ? "#fdc20c" : "white" }}
           className="col1  pb-1 pt-1 "
           onClick={() => Query_CommentVote(comment?._id,comment?.Upvote, "upvote")}
           name="upvote"

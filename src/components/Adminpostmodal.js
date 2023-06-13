@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Swal from 'sweetalert2';
+
 
 const Adminpostmodal = ({ onClose, PostID }) => {
   const [userQueries, setuserQueries] = useState([]);
@@ -56,6 +58,61 @@ const Adminpostmodal = ({ onClose, PostID }) => {
     }
   };
 
+
+  const deleteReport = async () => {
+ 
+    
+    try {
+      const params = new URLSearchParams();
+      params.append("postID", PostID);
+
+      await fetch(`https://df-server.vercel.app/deleteReport?${params.toString()}`, {
+        method: "DELETE",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },      
+        credentials: "include",
+      });
+
+      // console.log('xxxxxxx', PostID)
+
+      // Refresh the list of queries after deletion
+      // displayQueries();
+      
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+  const handleButtonClick = () => {
+
+    deletePost();
+    deleteReport();
+
+    Swal.fire(
+      'Action Sucessfull!',
+      'Query and Report both are deleted!',
+      'success'
+    )
+    
+  };
+
+  const handleButtonClick2 = () => {
+
+    deleteReport();
+
+    Swal.fire(
+      'Action Sucessfull!',
+      'Only Report is deleted!',
+      'success'
+    )
+    
+  };
+
+
+
   useEffect(() => {
     displayQueries();
   }, []);
@@ -79,9 +136,9 @@ const Adminpostmodal = ({ onClose, PostID }) => {
           <Button variant="secondary" onClick={onClose}>
             Close
           </Button>
-          <Button variant="primary" style={{ backgroundColor: 'red' }} onClick={deletePost } >  Accept
+          <Button variant="primary" style={{ backgroundColor: 'red' }} onClick={handleButtonClick} >  Accept
           </Button>
-          <Button variant="primary" style={{ backgroundColor: 'green' }}>
+          <Button variant="primary" style={{ backgroundColor: 'green' }} onClick={handleButtonClick2} >
             Decline
           </Button>
         </Modal.Footer>

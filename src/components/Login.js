@@ -12,6 +12,7 @@ import { userContext } from "../App";
 import Cookies from 'js-cookie';
 
 import { useCookies } from "react-cookie";
+import Swal from 'sweetalert2';
 
 
 
@@ -33,6 +34,17 @@ function Login() {
 
   const loginUser = async(e) =>{
     
+
+    const handleButtonClick = () => {
+
+      Swal.fire({
+        icon: 'error',
+        title: `Oops... ${Email}`,
+        text: 'Your account is suspended by Admin!',
+        // footer: '<a href="">Why do I have this issue?</a>'
+      });
+      
+    };
 
     e.preventDefault();
 
@@ -66,22 +78,43 @@ const emails = localStorage.getItem('Email');
 
     // Check if message is "Admin"
     if (data.message === "Admin") {
+      dispatch({type:"USER", payload: false});
       Navigate('/adminDashboard');
     } else {
       dispatch({ type: "USER", payload: true });
-      window.alert("Succcccccessfully Login ");
-      Navigate('/dashboard');
+      Swal.fire(
+        'Successfully Login!',
+        'Enjoy your Journey!',
+        'success'
+      ) ;
+           Navigate('/dashboard');
     }
   }else if(res.status === 400 || !res) {
-      window.alert("Invalid Credentials");  
+    Swal.fire({
+      icon: 'error',
+      title: 'Invalid Data',
+      text: 'Something went wrong!',
+      footer: '<a href="">Why do I have this issue?</a>'
+    }) ; 
+    }
+    else if(res.status === 500 || !res) {
+      
+      handleButtonClick(Email);
     }else if(res.status === 403 || !res) {
-      window.alert("an email send to your account please verify");
+      Swal.fire(
+        'Email Verification',
+        'Check your Inbox!',
+        'success'
+      );
     }else{
       dispatch({type:"USER", payload: true});
       
       // console.log(ress);
-      window.alert("Succcccccessfully Login " );
-    
+      Swal.fire(
+        'Successfully Login!',
+        'Enjoy your Journey!',
+        'success'
+      ) ;    
       Navigate('/dashboard');
     }
 
