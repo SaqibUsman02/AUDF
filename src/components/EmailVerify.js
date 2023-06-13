@@ -13,7 +13,7 @@ const EmailVerify = () => {
     useEffect(() => { 
         const verifyEmailUrl = async () =>{
             try{ 
-                const res= await fetch(`https://df-kappa.vercel.app/users/${param.id}/verify/${param.token}`,{
+                const res= await fetch(`https://df-server.vercel.app/users/${param.id}/verify/${param.token}`,{
                     method:"GET",
                     headers: {
                         Accept: "application/json",
