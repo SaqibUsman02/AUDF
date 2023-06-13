@@ -16,18 +16,8 @@ const EmailVerify = () => {
                 const url= `https://df-server.vercel.app/users/${param.id}/verify/${param.token}`;
                 const {res} = await axios.get(url);
 
-                if(res.status === 200) {
-                    setValidUrl(true);
-                    window.alert("Successfully Posted");
+                setValidUrl(true);
 
-                  }
-                 
-                  else{
-                    setValidUrl(false);
-                    window.alert("Invalid Data.");
-
-                
-                  }
                 
             }
             catch(error){
