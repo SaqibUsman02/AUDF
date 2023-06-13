@@ -77,7 +77,7 @@ const Routing = () => {
 
 
 
-<Route path="https://df-kappa.vercel.app/users/:id/verify/:token" element={<EmailVerify/>} />
+<Route path="/users/:id/verify/:token" element={<EmailVerify/>} />
 <Route path="/users/:id/forgot_pass/:token" element={ <ForgotPass />} />
 <Route path="/f" element={ <ForgotPass />} />
 
